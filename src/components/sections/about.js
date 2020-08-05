@@ -1,8 +1,8 @@
 import React from "react"
-import "./AboutSection.css"
+import Section from "../../styles/Section"
 
 const AboutSection = props => (
-  <section id="about" className="about">
+  <Section id="about">
     <h1>About</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro ullam quasi
@@ -10,7 +10,7 @@ const AboutSection = props => (
       dolorum reprehenderit accusantium vel sequi? Voluptate ex libero deleniti
       soluta quas!
     </p>
-  </section>
+  </Section>
 )
 
 export default AboutSection

@@ -1,30 +1,40 @@
 import React from "react"
-// import "./NavBarSection.css"
+import styled, { css } from "styled-components"
+
+const NavBar = styled.ul`
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+`
+
+const NavLink = styled.a`
+  text-decoration: none;
+  color: black;
+`
+
+// .nav-links:hover {
+//   color: white;
+//   background-color: black;
+// }
 
 const NavBarSection = props => (
   <nav className="navbar-section">
-    <ul className="navbar">
+    <NavBar>
       <li>
-        <a className="nav-links" href="/#about">
-          ABOUT
-        </a>
+        <NavLink href="/#about">ABOUT</NavLink>
       </li>
       <li>
-        <a className="nav-links" href="/#work">
-          WORK
-        </a>
+        <NavLink href="/#work">WORK</NavLink>
       </li>
       <li>
-        <a className="nav-links" href="/#contact">
-          CONTACT
-        </a>
+        <NavLink href="/#contact">CONTACT</NavLink>
       </li>
       <li>
-        <a className="nav-links" href="/#cv">
-          CV
-        </a>
+        <NavLink href="/#cv">CV</NavLink>
       </li>
-    </ul>
+    </NavBar>
   </nav>
 )
 
