@@ -1,41 +1,50 @@
 import React from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
+
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const NavBar = styled.ul`
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  text-align: right;
   list-style-type: none;
-  margin: 0;
+  position: fixed;
+  display: flex;
+  margin: 20px 40px;
+  li {
+    padding: 5px;
+    button {
+      background: none;
+      font-family: "Montserrat", sans-serif;
+      font-size: 15px;
+      border: none;
+      color: black;
+      padding: 5px;
+      &:hover {
+        cursor: pointer;
+        transition-duration: 0.5s;
+        color: #f0f0f0;
+        background-color: black;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
 `
 
-const NavLink = styled.a`
-  text-decoration: none;
-  color: black;
-`
-
-// .nav-links:hover {
-//   color: white;
-//   background-color: black;
-// }
-
-const NavBarSection = props => (
-  <nav className="navbar-section">
-    <NavBar>
-      <li>
-        <NavLink href="/#about">ABOUT</NavLink>
-      </li>
-      <li>
-        <NavLink href="/#work">WORK</NavLink>
-      </li>
-      <li>
-        <NavLink href="/#contact">CONTACT</NavLink>
-      </li>
-      <li>
-        <NavLink href="/#cv">CV</NavLink>
-      </li>
-    </NavBar>
-  </nav>
+const NavBarSection = () => (
+  <NavBar id="home">
+    <li>
+      <button onClick={() => scrollTo("#about")}>ABOUT</button>
+    </li>
+    <li>
+      <button onClick={() => scrollTo("#work")}>WORK</button>
+    </li>
+    <li>
+      <button href="mailto:tiffany.bouchard@mail.utoronto.ca">CONTACT</button>
+    </li>
+    <li>
+      <button href="/">CV</button>
+    </li>
+  </NavBar>
 )
 
 export default NavBarSection
