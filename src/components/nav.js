@@ -4,10 +4,13 @@ import styled from "styled-components"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
 const NavBar = styled.ul`
+  background-color: #f0f0f0;
+  width: 90vw;
+  margin: 0;
   list-style-type: none;
   position: fixed;
   display: flex;
-  margin: 20px 40px;
+  justify-content: flex-end;
   li {
     padding: 5px;
     button {
@@ -33,16 +36,16 @@ const NavBar = styled.ul`
 const NavBarSection = () => (
   <NavBar id="home">
     <li>
-      <button onClick={() => scrollTo("#about")}>ABOUT</button>
+      <button onClick={() => scrollTo("#about")}>about</button>
     </li>
     <li>
-      <button onClick={() => scrollTo("#work")}>WORK</button>
+      <button onClick={() => scrollTo("#work")}>work</button>
     </li>
     <li>
-      <button href="mailto:tiffany.bouchard@mail.utoronto.ca">CONTACT</button>
+      <button href="mailto:tiffany.bouchard@mail.utoronto.ca">contact</button>
     </li>
     <li>
-      <button href="/">CV</button>
+      <button href="/">cv</button>
     </li>
   </NavBar>
 )

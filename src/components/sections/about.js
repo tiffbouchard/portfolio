@@ -25,7 +25,7 @@ const AboutContainer = styled.div`
   }
 `
 const AboutHeader = styled.h1`
-  font-size: 80px;
+  font-size: 50px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   margin: 70px 0 0 0;
@@ -55,17 +55,12 @@ const SubHeaders = styled.h2`
 const AboutSection = props => (
   <Section id="about">
     <AboutContainer>
-      <AboutHeader>ABOUT</AboutHeader>
-      <p>I'm a software developer based in Toronto, ON.</p>
+      <AboutHeader>about</AboutHeader>
       <p>
-        I am a life-long learner and thrive on change. My customer service
-        experience has equipped me with strong communication skills and the
-        ability to work with a team. Throughout my studies, I have deepened my
-        critical and creative thinking while refining my ability to communicate
-        ideas succinctly and effectively. I am a naturally empathic person,
-        detail-oriented and I always keep an open mind. As a software developer,
-        I strive to combine all my skills to create efficient and beautiful
-        things for people, with people.
+        I am a software developer based in Toronto, ON and I strive to combine
+        my love for beautiful design with my passion for building things with
+        code. I aim to combine my wide range of skills and expereinces and
+        things I like to build some great things
       </p>
       <SubHeaders>SKILLS</SubHeaders>
       <SkillsContainer>

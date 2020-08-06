@@ -6,7 +6,7 @@ import styled from "styled-components"
 import projectone from "../../images/tinker.jpg"
 
 const Header = styled.h1`
-  font-size: 80px;
+  font-size: 50px;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   margin: 70px 0 0 0;
@@ -48,7 +48,7 @@ const Overlay = styled.div`
 
 const ProjectsSection = props => (
   <Section id="work">
-    <Header>WORK</Header>
+    <Header>work</Header>
     <ProjectContainer>
       <ProjectDiv>
         <img src={projectone} alt="" />

@@ -20,16 +20,12 @@ const MainContainer = styled.div`
 
 const NameHeader = styled.h1`
   font-family: "Montserrat", sans-serif;
-  font-size: 90px;
+  font-size: 50px;
   text-align: center;
   margin: 5px;
 `
-
-const NavContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
-`
-
+// -webkit-text-fill-color: rgba(247, 245, 241);
+// -webkit-text-stroke: 5px black;
 const SocialsContainer = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -38,14 +34,12 @@ const SocialsContainer = styled.div`
 
 const LandingSection = () => (
   <Section>
-    <NavContainer>
-      <Nav />
-    </NavContainer>
+    <Nav />
     <SocialsContainer>
       <Socials />
     </SocialsContainer>
     <MainContainer>
-      <NameHeader>TIFFANY BOUCHARD</NameHeader>
+      <NameHeader>Tiffany Bouchard</NameHeader>
       {/* <p>software developer</p> */}
     </MainContainer>
   </Section>
