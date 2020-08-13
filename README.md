@@ -8,7 +8,7 @@
 </h1>
 <p align="center">
   Portfolio Website
-</p
+</p>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e0df5966-3a7c-40bb-9cb8-03029de09f6a/deploy-status)](https://app.netlify.com/sites/tiffbouchard/deploys)
 
