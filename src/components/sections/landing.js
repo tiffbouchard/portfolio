@@ -2,10 +2,12 @@ import React from "react"
 
 import styled from "styled-components"
 
-import Section from "../../styles/Section"
 import Nav from "../nav"
-import Socials from "../socials"
+// import Socials from "../socials"
 
+const Section = styled.section`
+  height: 100vh;
+`
 const MainContainer = styled.div`
   height: 100vh;
   display: flex;
@@ -35,12 +37,13 @@ const SocialsContainer = styled.div`
 const LandingSection = () => (
   <Section>
     <Nav />
-    <SocialsContainer>
-      <Socials />
-    </SocialsContainer>
+    {/* <SocialsContainer></SocialsContainer> */}
     <MainContainer>
       <NameHeader>Tiffany Bouchard</NameHeader>
-      {/* <p>software developer</p> */}
+      <p>
+        Toronto based developer passionate about actualizing innovation,
+        creativity and design.
+      </p>
     </MainContainer>
   </Section>
 )

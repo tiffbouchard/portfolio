@@ -3,7 +3,7 @@ import Section from "../../styles/Section"
 
 import styled from "styled-components"
 
-import projectone from "../../images/tinker.jpg"
+// import projectone from "../../images/tinker.jpg"
 
 const Header = styled.h1`
   font-size: 50px;
@@ -49,18 +49,7 @@ const Overlay = styled.div`
 const ProjectsSection = props => (
   <Section id="work">
     <Header>work</Header>
-    <ProjectContainer>
-      <ProjectDiv>
-        <img src={projectone} alt="" />
-        <Overlay>
-          <div>Project One</div>
-        </Overlay>
-      </ProjectDiv>
-
-      <img src={projectone} alt="" />
-      <img src={projectone} alt="" />
-      <img src={projectone} alt="" />
-    </ProjectContainer>
+    <ProjectContainer></ProjectContainer>
   </Section>
 )
 

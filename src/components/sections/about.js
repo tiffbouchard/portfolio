@@ -3,18 +3,6 @@ import styled from "styled-components"
 
 import Section from "../../styles/Section"
 
-import django from "../icons/django-plain.svg"
-import css from "../icons/css3-original.svg"
-import express from "../icons/express-original.svg"
-import html from "../icons/html5-original.svg"
-import javascript from "../icons/javascript-plain.svg"
-import jquery from "../icons/jquery-original-wordmark.svg"
-import mongodb from "../icons/mongodb-original-wordmark.svg"
-import nodejs from "../icons/nodejs-original-wordmark.svg"
-import postgresql from "../icons/postgresql-original-wordmark.svg"
-import python from "../icons/python-original.svg"
-import react from "../icons/react-original-wordmark.svg"
-
 const AboutContainer = styled.div`
   display: flex;
   align-items: center;
@@ -53,7 +41,7 @@ const SubHeaders = styled.h2`
 `
 
 const AboutSection = props => (
-  <Section id="about">
+  <section id="about">
     <AboutContainer>
       <AboutHeader>about</AboutHeader>
       <p>
@@ -64,7 +52,7 @@ const AboutSection = props => (
       </p>
       <SubHeaders>SKILLS</SubHeaders>
       <SkillsContainer>
-        <img src={html} alt="django" />
+        {/* <img src={html} alt="django" />
         <img src={css} alt="django" />
         <img src={javascript} alt="django" />
         <img src={jquery} alt="django" />
@@ -74,10 +62,10 @@ const AboutSection = props => (
         <img src={nodejs} alt="django" />
         <img src={express} alt="django" />
         <img src={mongodb} alt="django" />
-        <img src={postgresql} alt="django" />
+        <img src={postgresql} alt="django" /> */}
       </SkillsContainer>
     </AboutContainer>
-  </Section>
+  </section>
 )
 
 export default AboutSection
