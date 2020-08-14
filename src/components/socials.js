@@ -1,55 +1,46 @@
-// import React from "react"
+import React from "react"
+import styled from "styled-components"
 
-// import styled from "styled-components"
+const NavBar = styled.ul`
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  li {
+    padding: 10px;
+    a {
+      font-family: NeueMontreal;
+      font-size: 50px;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        cursor: pointer;
+        transition-duration: 0.5s;
+        -webkit-text-fill-color: #f0f0f0;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+      }
+    }
+  }
+`
 
-// import github from "./icons/github.svg"
-// import linkedin from "./icons/linkedin.svg"
-// import twitter from "./icons/twitter.svg"
-// import instagram from "./icons/instagram.svg"
+const Socials = () => (
+  <NavBar>
+    <li>
+      <a href="http://www.instagram.com/tiffbouchard" target="blank">
+        Instagram
+      </a>
+    </li>
+    <li>
+      <a href="http://www.linkedin.com/in/tiffanybouchard" target="blank">
+        LinkedIn
+      </a>
+    </li>
+    <li>
+      <a href="http://www.twitter.com/tiffbouchard" target="blank">
+        Twitter
+      </a>
+    </li>
+  </NavBar>
+)
 
-// const LogoList = styled.ul`
-//   height: 10px;
-//   position: fixed;
-//   margin: 700px 0 0 -20px;
-//     li {
-//       list-style-type: none;
-//       a {
-//         img {
-//           height: 25px;
-//           padding: 5px;
-//           transition: transform 1s;
-//           &:hover {
-//             transform: scale(1.2);
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
-
-// const SocialSection = props => (
-//   <LogoList>
-//     <li>
-//       <a href="http://github.com/tiffbouchard" target="blank">
-//         <img src={github} alt="github" />
-//       </a>
-//     </li>
-//     <li>
-//       <a href="http://twitter.com/tiffbouchard" target="blank">
-//         <img src={twitter} alt="twitter" />
-//       </a>
-//     </li>
-//     <li>
-//       <a href="http://linkedin.com/in/tiffanybouchard" target="blank">
-//         <img src={linkedin} alt="linkedin" />
-//       </a>
-//     </li>
-//     <li>
-//       <a href="http://instagram.com/tiffbouchard" target="blank">
-//         <img src={instagram} alt="instagram" />
-//       </a>
-//     </li>
-//   </LogoList>
-// )
-
-// export default SocialSection
+export default Socials

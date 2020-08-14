@@ -1,50 +1,46 @@
 import React from "react"
-
 import styled from "styled-components"
 
 import Nav from "../nav"
-// import Socials from "../socials"
+import Socials from "../socials"
 
 const Section = styled.section`
   height: 100vh;
+  z-index: 1;
+  position: relative;
 `
+
 const MainContainer = styled.div`
-  height: 100vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  p {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-  }
 `
 
 const NameHeader = styled.h1`
-  font-family: "Montserrat", sans-serif;
-  font-size: 50px;
+  font-family: NeueMontreal;
+  font-size: 150px;
   text-align: center;
-  margin: 5px;
 `
-// -webkit-text-fill-color: rgba(247, 245, 241);
-// -webkit-text-stroke: 5px black;
-const SocialsContainer = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  align: items: flex-end;
+
+const Bio = styled.p`
+  font-family: NeueMontrealLight;
+  font-size: 30px;
+  text-align: center;
 `
 
 const LandingSection = () => (
   <Section>
     <Nav />
-    {/* <SocialsContainer></SocialsContainer> */}
     <MainContainer>
       <NameHeader>Tiffany Bouchard</NameHeader>
-      <p>
+      <Bio>
         Toronto based developer passionate about actualizing innovation,
         creativity and design.
-      </p>
+      </Bio>
     </MainContainer>
+    <Socials />
   </Section>
 )
 

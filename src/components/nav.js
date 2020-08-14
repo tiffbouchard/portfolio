@@ -1,30 +1,25 @@
-import React from "react"
+import React, { Component } from "react"
 import styled from "styled-components"
 
-import scrollTo from "gatsby-plugin-smoothscroll"
+import Modal from "./modal.js"
 
 const NavBar = styled.ul`
-  background-color: #f0f0f0;
-  width: 90vw;
-  margin: 0;
   list-style-type: none;
-  position: fixed;
   display: flex;
-  justify-content: flex-end;
-  li {
-    padding: 5px;
+  justify-content: center;
     button {
+      padding: 10px;
+      font-family: NeueMontreal;
       background: none;
-      font-family: "Montserrat", sans-serif;
-      font-size: 15px;
+      font-size: 50px;
       border: none;
       color: black;
-      padding: 5px;
       &:hover {
         cursor: pointer;
         transition-duration: 0.5s;
-        color: #f0f0f0;
-        background-color: black;
+        -webkit-text-fill-color: #f0f0f0;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
       }
       &:focus {
         outline: none;
@@ -33,21 +28,64 @@ const NavBar = styled.ul`
   }
 `
 
-const NavBarSection = () => (
-  <NavBar id="home">
-    <li>
-      <button onClick={() => scrollTo("#about")}>about</button>
-    </li>
-    <li>
-      <button onClick={() => scrollTo("#work")}>work</button>
-    </li>
-    <li>
-      <button href="mailto:tiffany.bouchard@mail.utoronto.ca">contact</button>
-    </li>
-    <li>
-      <button href="/">cv</button>
-    </li>
-  </NavBar>
-)
+class NavBarSection extends Component {
+  state = {
+    showAbout: false,
+    showWork: false,
+    showContact: false,
+  }
+
+  openAboutModal = () => {
+    this.setState({ showAbout: true })
+  }
+
+  closeAboutModal = () => {
+    this.setState({ showAbout: false })
+  }
+
+  openWorkModal = () => {
+    this.setState({ showWork: true })
+  }
+
+  closeWorkModal = () => {
+    this.setState({ showWork: false })
+  }
+
+  openContactModal = () => {
+    this.setState({ showContact: true })
+  }
+
+  closeContactModal = () => {
+    this.setState({ showContact: false })
+  }
+
+  render() {
+    return (
+      <NavBar id="home">
+        <Modal
+          showAbout={this.state.showAbout}
+          handleClose={this.closeAboutModal}
+        >
+          <p>
+            Hey, my name is Tiffany and I am a full stack developer based in
+            Toronto.
+          </p>
+        </Modal>
+        <Modal
+          showWork={this.state.showWork}
+          handleClose={this.closeWorkModal}
+        ></Modal>
+        <Modal
+          showContact={this.state.showContact}
+          handleClose={this.closeContactModal}
+        ></Modal>
+        <button onClick={this.openAboutModal}>About</button>
+        <button onClick={this.openWorkModal}>Work</button>
+        <button onClick={this.openContactModal}>Contact</button>
+        <button href="/">Resume</button>
+      </NavBar>
+    )
+  }
+}
 
 export default NavBarSection

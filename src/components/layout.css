@@ -1,3 +1,14 @@
-body {
-  background-color:#f0f0f0;
+* {
+  background-color:#f3f3f3;
+  overflow: hidden; 
+}
+
+@font-face {
+  font-family: NeueMontreal;
+  src: url(../../public/static/fonts/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+  font-family: NeueMontrealLight;
+  src: url(../../public/static/fonts/NeueMontreal-Light.otf);
 }
