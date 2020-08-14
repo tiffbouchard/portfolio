@@ -1,14 +1,12 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 
-import Form from "./contactform.js"
-import About from "./about.js"
-import Work from "./work.js"
 import Modal from "./modal.js"
 
-const NavBar = styled.ul`
+const ProjectList = styled.ul`
   list-style-type: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 0;
     button {
@@ -32,7 +30,7 @@ const NavBar = styled.ul`
   }
 `
 
-class NavBarSection extends Component {
+class Work extends Component {
   state = {
     showAbout: false,
     showWork: false,
@@ -65,29 +63,26 @@ class NavBarSection extends Component {
 
   render() {
     return (
-      <NavBar id="home">
+      <ProjectList>
         <Modal
           showAbout={this.state.showAbout}
           handleClose={this.closeAboutModal}
-        >
-          <About />
-        </Modal>
-        <Modal showWork={this.state.showWork} handleClose={this.closeWorkModal}>
-          <Work />
-        </Modal>
+        ></Modal>
+        <Modal
+          showWork={this.state.showWork}
+          handleClose={this.closeWorkModal}
+        ></Modal>
         <Modal
           showContact={this.state.showContact}
           handleClose={this.closeContactModal}
-        >
-          <Form />
-        </Modal>
+        ></Modal>
         <button onClick={this.openAboutModal}>About</button>
         <button onClick={this.openWorkModal}>Work</button>
         <button onClick={this.openContactModal}>Contact</button>
         <button href="/">Resume</button>
-      </NavBar>
+      </ProjectList>
     )
   }
 }
 
-export default NavBarSection
+export default Work

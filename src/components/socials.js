@@ -5,11 +5,12 @@ const NavBar = styled.ul`
   list-style-type: none;
   display: flex;
   justify-content: center;
+  padding: 0;
   li {
     padding: 10px;
     a {
       font-family: NeueMontreal;
-      font-size: 50px;
+      font-size: 40px;
       text-decoration: none;
       color: black;
       &:hover {

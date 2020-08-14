@@ -10,8 +10,10 @@ const Modal = ({ handleClose, showAbout, showWork, showContact, children }) => {
   return (
     <div className={showHideClassName}>
       <section className="modal-main">
+        <button className="close-btn" onClick={handleClose}>
+          X
+        </button>
         {children}
-        <button onClick={handleClose}>X</button>
       </section>
     </div>
   )
