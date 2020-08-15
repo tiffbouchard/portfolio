@@ -1,6 +1,13 @@
 * {
   background-color:#f3f3f3;
-  overflow: hidden; 
+}
+
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @font-face {

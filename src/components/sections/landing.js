@@ -3,12 +3,14 @@ import styled from "styled-components"
 import { Spring } from "react-spring/renderprops"
 import Hamburger from "hamburger-react"
 
+import "./landing.css"
+
 import Nav from "../nav"
 import Socials from "../socials"
 
 const Section = styled.section`
+  height: 100%;
   display: flex;
-  height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -29,38 +31,31 @@ const Bio = styled.p`
   margin-top: 0;
   margin-bottom: 180px;
 `
-const Ham = styled.Hamburger`
-    justify-self: flex-end;
-    @media (max-width: 600px) {
-      visibility: hidden;
-`
 
 const LandingSection = () => {
   return (
-    <>
-      <Ham />
-      <Section>
-        <Spring
-          from={{ opacity: 0 }}
-          to={{ opacity: 1 }}
-          config={{ delay: 500, duration: 500 }}
-        >
-          {props => (
-            <div style={props}>
-              <Nav />
-              <div>
-                <NameHeader>Tiffany Bouchard</NameHeader>
-                <Bio>
-                  Toronto based developer passionate about actualizing
-                  innovation, creativity and design.
-                </Bio>
-              </div>
-              <Socials />
+    <Section>
+      <Spring
+        from={{ opacity: 0 }}
+        to={{ opacity: 1 }}
+        config={{ delay: 500, duration: 500 }}
+      >
+        {props => (
+          <div style={props}>
+            <Hamburger className="hamburger" />
+            <Nav />
+            <div>
+              <NameHeader>Tiffany Bouchard</NameHeader>
+              <Bio>
+                Toronto based developer passionate about actualizing innovation,
+                creativity and design.
+              </Bio>
             </div>
-          )}
-        </Spring>
-      </Section>
-    </>
+            <Socials />
+          </div>
+        )}
+      </Spring>
+    </Section>
   )
 }
 

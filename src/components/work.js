@@ -76,10 +76,9 @@ class Work extends Component {
           showContact={this.state.showContact}
           handleClose={this.closeContactModal}
         ></Modal>
-        <button onClick={this.openAboutModal}>About</button>
-        <button onClick={this.openWorkModal}>Work</button>
-        <button onClick={this.openContactModal}>Contact</button>
-        <button href="/">Resume</button>
+        <button onClick={this.openAboutModal}>TaskLite</button>
+        <button onClick={this.openWorkModal}>Chef It Up</button>
+        <button onClick={this.openContactModal}>LinenWay</button>
       </ProjectList>
     )
   }

@@ -6,7 +6,7 @@ import "./layout.css"
 const Layout = () => {
   return (
     <>
-      <Landing />
+      <Landing className="landing" />
     </>
   )
 }
