@@ -1,11 +1,14 @@
 import React from "react"
+import { Trail } from "react-spring/renderprops"
 import styled from "styled-components"
 
 const NavBar = styled.ul`
   list-style-type: none;
   display: flex;
   justify-content: center;
+  transition: 0.5s;
   padding: 0;
+  margin: 0;
   li {
     padding: 10px;
     a {
@@ -13,6 +16,15 @@ const NavBar = styled.ul`
       font-size: 40px;
       text-decoration: none;
       color: black;
+      @media (max-width: 950px) {
+        font-size: 30px;
+      }
+      @media (max-width: 600px) {
+        font-size: 20px;
+      }
+      @media (max-height: 650px) {
+        font-size: 20px;
+      }
       &:hover {
         cursor: pointer;
         transition-duration: 0.5s;
@@ -24,23 +36,33 @@ const NavBar = styled.ul`
   }
 `
 
+const items = [
+  { title: "Instagram", key: 1, href: "http://www.instagram.com/tiffbouchard" },
+  {
+    title: "LinkedIn",
+    key: 2,
+    href: "http://www.linkedin.com/in/tiffanybouchard",
+  },
+  { title: "Twitter", key: 3, href: "http://www.twitter.com/tiffbouchard" },
+]
+
 const Socials = () => (
   <NavBar>
-    <li>
-      <a href="http://www.instagram.com/tiffbouchard" target="blank">
-        Instagram
-      </a>
-    </li>
-    <li>
-      <a href="http://www.linkedin.com/in/tiffanybouchard" target="blank">
-        LinkedIn
-      </a>
-    </li>
-    <li>
-      <a href="http://www.twitter.com/tiffbouchard" target="blank">
-        Twitter
-      </a>
-    </li>
+    <Trail
+      items={items}
+      keys={item => item.key}
+      from={{ opacity: 0 }}
+      to={{ opacity: 1 }}
+      config={{ delay: 1000, duration: 3000 }}
+    >
+      {item => props => (
+        <li>
+          <a style={props} href={item.href} target="blank">
+            {item.title}
+          </a>
+        </li>
+      )}
+    </Trail>
   </NavBar>
 )
 

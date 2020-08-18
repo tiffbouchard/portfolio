@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import emailjs from "emailjs-com"
+import { Spring } from "react-spring/renderprops"
 import styled from "styled-components"
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
@@ -89,34 +90,44 @@ class Form extends Component {
 
   render() {
     return (
-      <FormContainer onSubmit={this.handleSubmit}>
-        <h1>Contact</h1>
-        <input
-          type="text"
-          name="name"
-          value={this.state.name}
-          onChange={this.handleChange}
-          placeholder="Name"
-        />
-        <input
-          required
-          type="email"
-          name="email"
-          value={this.state.email}
-          onChange={this.handleChange}
-          placeholder="Email"
-        />
-        <textarea
-          required
-          rows="10"
-          name="message"
-          value={this.state.message}
-          onChange={this.handleChange}
-          placeholder="Message"
-        />
-        <button type="submit">Send</button>
-        {this.state.isLoading ? "Loading..." : null}
-      </FormContainer>
+      <Spring
+        from={{ opacity: 0 }}
+        to={{ opacity: 1 }}
+        config={{ delay: 500, duration: 500 }}
+      >
+        {props => (
+          <div style={props}>
+            <FormContainer onSubmit={this.handleSubmit}>
+              <h1>Contact</h1>
+              <input
+                type="text"
+                name="name"
+                value={this.state.name}
+                onChange={this.handleChange}
+                placeholder="Name"
+              />
+              <input
+                required
+                type="email"
+                name="email"
+                value={this.state.email}
+                onChange={this.handleChange}
+                placeholder="Email"
+              />
+              <textarea
+                required
+                rows="10"
+                name="message"
+                value={this.state.message}
+                onChange={this.handleChange}
+                placeholder="Message"
+              />
+              <button type="submit">Send</button>
+              {this.state.isLoading ? "Loading..." : null}
+            </FormContainer>
+          </div>
+        )}
+      </Spring>
     )
   }
 }

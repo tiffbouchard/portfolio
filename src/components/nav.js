@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
+import { Trail, Spring } from "react-spring/renderprops"
 
 import Form from "./contactform.js"
 import About from "./about.js"
@@ -10,7 +11,8 @@ const NavBar = styled.ul`
   list-style-type: none;
   display: flex;
   justify-content: center;
-  padding: 0;
+  padding: 0px;
+  margin: 0;
     button {
       padding: 10px;
       font-family: NeueMontreal;
@@ -18,6 +20,7 @@ const NavBar = styled.ul`
       font-size: 40px;
       border: none;
       color: black;
+      transition: 0.5s;
       &:hover {
         cursor: pointer;
         transition-duration: 0.5s;
@@ -28,6 +31,15 @@ const NavBar = styled.ul`
       &:focus {
         outline: none;
       }
+      @media (max-width: 950px) {
+      font-size: 30px;
+    }
+      @media (max-width: 600px) {
+        font-size: 20px;
+    }
+    @media (max-height: 650px) {
+      font-size: 20px;
+    }
     }
   }
 `
@@ -64,6 +76,12 @@ class NavBarSection extends Component {
   }
 
   render() {
+    const items = [
+      { title: "About", key: 1, onClick: this.openAboutModal },
+      { title: "Work", key: 2, onClick: this.openWorkModal },
+      { title: "Contact", key: 3, onClick: this.openContactModal },
+      { title: "Resume", key: 4, onClick: this.openResumeModal },
+    ]
     return (
       <NavBar id="home">
         <Modal
@@ -81,10 +99,19 @@ class NavBarSection extends Component {
         >
           <Form />
         </Modal>
-        <button onClick={this.openAboutModal}>About</button>
-        <button onClick={this.openWorkModal}>Work</button>
-        <button onClick={this.openContactModal}>Contact</button>
-        <button href="/">Resume</button>
+        <Trail
+          items={items}
+          keys={item => item.key}
+          from={{ opacity: 0 }}
+          to={{ opacity: 1 }}
+          config={{ delay: 1000, duration: 2000 }}
+        >
+          {item => props => (
+            <button style={props} onClick={item.onClick}>
+              {item.title}
+            </button>
+          )}
+        </Trail>
       </NavBar>
     )
   }

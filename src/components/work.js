@@ -32,53 +32,67 @@ const ProjectList = styled.ul`
 
 class Work extends Component {
   state = {
-    showAbout: false,
-    showWork: false,
-    showContact: false,
+    showPOne: false,
+    showPTwo: false,
+    showPThree: false,
+    showPFour: false,
   }
 
-  openAboutModal = () => {
-    this.setState({ showAbout: true })
+  openOneModal = () => {
+    this.setState({ showPOne: true })
   }
 
-  closeAboutModal = () => {
-    this.setState({ showAbout: false })
+  closeOneModal = () => {
+    this.setState({ showPOne: false })
   }
 
-  openWorkModal = () => {
-    this.setState({ showWork: true })
+  openTwoModal = () => {
+    this.setState({ showPTwo: true })
   }
 
-  closeWorkModal = () => {
-    this.setState({ showWork: false })
+  closeTwoModal = () => {
+    this.setState({ showPTwo: false })
   }
 
-  openContactModal = () => {
-    this.setState({ showContact: true })
+  openThreeModal = () => {
+    this.setState({ showPThree: true })
   }
 
-  closeContactModal = () => {
-    this.setState({ showContact: false })
+  closeThreeModal = () => {
+    this.setState({ showPThree: false })
+  }
+
+  openFourModal = () => {
+    this.setState({ showPFour: true })
+  }
+
+  closeFourModal = () => {
+    this.setState({ showPFour: false })
   }
 
   render() {
     return (
       <ProjectList>
         <Modal
-          showAbout={this.state.showAbout}
-          handleClose={this.closeAboutModal}
+          showAbout={this.state.showPOne}
+          handleClose={this.closeOneModal}
         ></Modal>
         <Modal
-          showWork={this.state.showWork}
-          handleClose={this.closeWorkModal}
+          showWork={this.state.showPTwo}
+          handleClose={this.closeTwoModal}
         ></Modal>
         <Modal
-          showContact={this.state.showContact}
-          handleClose={this.closeContactModal}
+          showContact={this.state.showPThree}
+          handleClose={this.closeThreeModal}
         ></Modal>
-        <button onClick={this.openAboutModal}>TaskLite</button>
-        <button onClick={this.openWorkModal}>Chef It Up</button>
-        <button onClick={this.openContactModal}>LinenWay</button>
+        <Modal
+          showContact={this.state.showPFour}
+          handleClose={this.closeFourModal}
+        ></Modal>
+        <button onClick={this.openOneModal}>TaskLite</button>
+        <button onClick={this.openTwoModal}>OJOS</button>
+        <button onClick={this.openThreeModal}>Chef.dev</button>
+        <button onClick={this.openFourModal}>LinenWay</button>
       </ProjectList>
     )
   }

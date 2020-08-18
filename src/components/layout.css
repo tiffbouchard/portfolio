@@ -1,9 +1,10 @@
 * {
   background-color:#f3f3f3;
+  overflow: auto;
+
 }
 
 .landing {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
