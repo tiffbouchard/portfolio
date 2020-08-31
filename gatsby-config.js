@@ -44,6 +44,14 @@ module.exports = {
             family: `Montserrat`,
             variants: [`400`, `800`],
           },
+          {
+            family: `Archivo Black`,
+            variant: [`400`],
+          },
+          {
+            family: `Archivo`,
+            variant: [`400`],
+          },
         ],
       },
     },
