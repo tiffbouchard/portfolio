@@ -2,50 +2,15 @@ import React from "react"
 
 import styled from "styled-components"
 
-// const AboutContainer = styled.div`
-//   display: flex;
-//   align-items: center;
-//   flex-direction: column;
-//   margin: 10px 70px 10px 70px;
-//   p {
-//     font-family: "Montserrat", sans-serif;
-//   }
-// `
-// const AboutHeader = styled.h1`
-//   font-size: 50px;
-//   font-family: "Montserrat", sans-serif;
-//   font-weight: bold;
-//   margin: 70px 0 0 0;
-// `
-
-// const SkillsContainer = styled.div`
-//   display: flex;
-//   flex-wrap: wrap;
-//   justify-content: center;
-//   img {
-//     height: 50px;
-//     filter: grayscale(100%) brightness(70%) contrast(2);
-//     padding: 10px;
-//     &:hover {
-//       filter: none;
-//       transition-duration: 0.5s;
-//     }
-//   }
-// `
-
-// const SubHeaders = styled.h2`
-//   font-size: 20px;
-//   font-family: "Montserrat", sans-serif;
-//   font-weight: bold;
-// `
-
 const AboutElementsContainer = styled.div`
+  max-width: 900px;
   h1 {
     font-size: 47px;
     font-family: "NMBold";
   }
   p {
     font-family: "NeueMontreal";
+    text-align: justify;
   }
 `
 const SkillsElementsContainer = styled.div`

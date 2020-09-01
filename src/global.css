@@ -12,9 +12,9 @@
 }
 
 .sub-section {
-  min-height: 100%;
-  margin: 0 150px 0 150px;
+  min-height: 100vh;
   display: flex;
+  margin-top: 100px;
   flex-direction: column;
   align-items: center;
   justify-content: center;

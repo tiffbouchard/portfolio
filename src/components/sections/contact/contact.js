@@ -1,9 +1,51 @@
 import React, { Component } from "react"
 import emailjs from "emailjs-com"
+import styled from "styled-components"
 
 const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
 const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
 const USER_ID = process.env.REACT_APP_USER_ID
+
+const FormContainer = styled.form`
+  h1 {
+    text-align: center;
+    font-family: "NMBold";
+    font-size: 47px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input {
+      height: 10px;
+    }
+    input,
+    textarea {
+      font-size: 16px;
+      font-family: "NeueMontreal";
+      margin: 5px;
+      padding: 15px;
+      width: 500px;
+      border: 1px solid black;
+      border-radius: 2px;
+      &:focus {
+      }
+    }
+    button {
+      margin: 5px;
+      padding: 15px;
+      width: 150px;
+      border: 1px solid black;
+      border-radius: 2px;
+      transition: 0.5s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px;
+      }
+    }
+  }
+`
 
 class Form extends Component {
   state = {
@@ -54,34 +96,36 @@ class Form extends Component {
   render() {
     return (
       <section className="sub-section">
-        <form onSubmit={this.handleSubmit}>
-          <h1>Contact</h1>
-          <input
-            type="text"
-            name="name"
-            value={this.state.name}
-            onChange={this.handleChange}
-            placeholder="Name"
-          />
-          <input
-            required
-            type="email"
-            name="email"
-            value={this.state.email}
-            onChange={this.handleChange}
-            placeholder="Email"
-          />
-          <textarea
-            required
-            rows="10"
-            name="message"
-            value={this.state.message}
-            onChange={this.handleChange}
-            placeholder="Message"
-          />
-          <button type="submit">Send</button>
-          {this.state.isLoading ? "Loading..." : null}
-        </form>
+        <FormContainer>
+          <h1>CONTACT</h1>
+          <form onSubmit={this.handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              value={this.state.name}
+              onChange={this.handleChange}
+              placeholder="Name"
+            />
+            <input
+              required
+              type="email"
+              name="email"
+              value={this.state.email}
+              onChange={this.handleChange}
+              placeholder="Email"
+            />
+            <textarea
+              required
+              rows="10"
+              name="message"
+              value={this.state.message}
+              onChange={this.handleChange}
+              placeholder="Message"
+            />
+            <button type="submit">Send</button>
+            {this.state.isLoading ? "Loading..." : null}
+          </form>
+        </FormContainer>
       </section>
     )
   }

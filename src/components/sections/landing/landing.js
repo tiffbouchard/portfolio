@@ -55,12 +55,6 @@ const LandingSection = () => {
       >
         {props => (
           <LandingElementsContainer style={props}>
-            {/* <nav>
-              <a href="#about">ABOUT</a>
-              <a href="#projects">PROJECTS</a>
-              <a href="#contact">CONTACT</a>
-              <a href="#resume">RESUME</a>
-            </nav> */}
             <div>
               <h1>TIFFANY BOUCHARD</h1>
               <p>

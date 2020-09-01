@@ -1,94 +1,309 @@
 import React from "react"
-// import Section from "../../styles/Section"
+import styled from "styled-components"
 
-import "./projects.css"
+const MainProjectsContainer = styled.div`
+  max-width: 900px;
+  h1 {
+    font-size: 47px;
+    font-family: "NMBold";
+    text-align: right;
+    margin-bottom: 40px;
+  }
+`
 
-// import projectone from "../../images/tinker.jpg"
+const OtherProjectsContainer = styled.div`
+  max-width: 900px;
+`
 
-// const Header = styled.h1`
-//   font-size: 50px;
-//   font-family: "Montserrat", sans-serif;
-//   font-weight: bold;
-//   margin: 70px 0 0 0;
-//   text-align: center;
-// `
+const ProjectContainerOne = styled.div`
+  display: flex;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h4 {
+      font-family: "NMBold";
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    div {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      span {
+        font-family: "NeueMontreal";
+        font-size: 12px;
+        padding: 5px;
+        margin-right: 5px;
+        border-radius: 2px;
+        border: solid 1px;
+      }
+    }
+    p {
+      margin-right: 30px;
+      font-family: "NeueMontreal";
+      text-align: justify;
+    }
+  }
+`
 
-// const ProjectContainer = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
-//   grid-template-rows: auto;
-//   grid-gap: 10px;
-//   margin: 10px 70px 10px 70px;
-//   img {
-//     width: 100%;
-//     height: auto;
-//   }
-// `
-
-// const ProjectDiv = styled.div`
-//   position: relative;
-// `
-
-// const Overlay = styled.div`
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   height: 100%;
-//   width: 100%;
-//   opacity: 0;
-//   transition: 0.5s ease;
-//   background-color: white;
-//   &:hover {
-//     opacity: 0.9;
-//     cursor: pointer;
-//   }
-// `
+const ProjectContainerTwo = styled.div`
+  display: flex;
+  flex-direction: row-reverse;
+  text-align: right;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h4 {
+      font-family: "NMBold";
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    div {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      span {
+        font-family: "NeueMontreal";
+        font-size: 12px;
+        padding: 5px;
+        margin-right: 5px;
+        border-radius: 2px;
+        border: solid 1px;
+      }
+    }
+    p {
+      margin-left: 30px;
+      font-family: "NeueMontreal";
+      text-align: justify;
+    }
+  }
+`
 
 const ProjectsSection = props => (
   <section className="sub-section">
-    <h1 id="projects-header">PROJECTS</h1>
-    <div>
-      <div>
-        <h4>Project One</h4>
+    <MainProjectsContainer>
+      <h1 id="projects-header">PROJECTS</h1>
+      <ProjectContainerOne>
         <div>
-          <span>React</span>
-          <span>Next.js</span>
-          <span>Sanity.io</span>
-          <span>Stripe</span>
+          <h4>OJOS</h4>
+          <div>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Sanity.io</span>
+            <span>Stripe</span>
+          </div>
+          <p>
+            Design focused and curious full-stack web developer passionate about
+            innovation, creativity and actualizing visions by solving problems
+            .Design focused and curious full-stack web developer passionate
+            about innovation, creativity and actualizing visions by solving
+            problems. Design focused and curious full-stack web developer
+            passionate about innovation, creativity and actualizing visions by
+            solving problems .
+          </p>
         </div>
-        <p>
-          Design focused and curious full-stack web developer passionate about
-          innovation, creativity and actualizing visions by solving problems
-          .Design focused and curious full-stack web developer passionate about
-          innovation, creativity and actualizing visions by solving problems .
-        </p>
-      </div>
-      <div>
-        <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081" />
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4>Project Two</h4>
         <div>
-          <span>React</span>
-          <span>Next.js</span>
-          <span>Sanity.io</span>
-          <span>Stripe</span>
+          <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081" />
         </div>
-        <p>
-          Design focused and curious full-stack web developer passionate about
-          innovation, creativity and actualizing visions by solving problems
-          .Design focused and curious full-stack web developer passionate about
-          innovation, creativity and actualizing visions by solving problems .
-        </p>
-      </div>
-      <div>
-        <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081" />
-      </div>
-    </div>
+      </ProjectContainerOne>
+      <ProjectContainerTwo>
+        <div>
+          <h4>Project Six</h4>
+          <div>
+            <span>React</span>
+            <span>MongoDB</span>
+            <span>RSuite</span>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <p>
+            Design focused and curious full-stack web developer passionate about
+            innovation, creativity and actualizing visions by solving problems
+            .Design focused and curious full-stack web developer passionate
+            about innovation, creativity and actualizing visions by solving
+            problems. .Design focused and curious full-stack web developer
+            passionate about innovation, creativity and actualizing visions by
+            solving problems .
+          </p>
+        </div>
+        <div>
+          <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081" />
+        </div>
+      </ProjectContainerTwo>
+      <ProjectContainerOne>
+        <div>
+          <h4>CHEF.DEV</h4>
+          <div>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Sanity.io</span>
+            <span>Stripe</span>
+          </div>
+          <p>
+            Design focused and curious full-stack web developer passionate about
+            innovation, creativity and actualizing visions by solving problems
+            .Design focused and curious full-stack web developer passionate
+            about innovation, creativity and actualizing visions by solving
+            problems. Design focused and curious full-stack web developer
+            passionate about innovation, creativity and actualizing visions by
+            solving problems .
+          </p>
+        </div>
+        <div>
+          <img src="https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-images-image_large.png?format=jpg&quality=90&v=1530129081" />
+        </div>
+      </ProjectContainerOne>
+    </MainProjectsContainer>
+    <OtherProjectsContainer>
+      <ProjectContainerOne>
+        <div>
+          <h4>Forkpitch</h4>
+          <div>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Sanity.io</span>
+            <span>Stripe</span>
+          </div>
+          <p>
+            Design focused and curious full-stack web developer passionate about
+            innovation, creativity and actualizing visions by solving problems
+            .Design focused and curious full-stack web developer passionate
+            about innovation, creativity and actualizing visions by solving
+            problems. Design focused and curious full-stack web developer
+            passionate about innovation, creativity and actualizing visions by
+            solving problems .
+          </p>
+        </div>
+      </ProjectContainerOne>
+      <ProjectContainerOne>
+        <div>
+          <h4>How Risky?</h4>
+          <div>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Sanity.io</span>
+            <span>Stripe</span>
+          </div>
+          <p>
+            Design focused and curious full-stack web developer passionate about
+            innovation, creativity and actualizing visions by solving problems
+            .Design focused and curious full-stack web developer passionate
+            about innovation, creativity and actualizing visions by solving
+            problems. Design focused and curious full-stack web developer
+            passionate about innovation, creativity and actualizing visions by
+            solving problems .
+          </p>
+        </div>
+      </ProjectContainerOne>
+      <ProjectContainerOne>
+        <div>
+          <h4>Ebay Automation</h4>
+          <div>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Sanity.io</span>
+            <span>Stripe</span>
+          </div>
+          <p>
+            Design focused and curious full-stack web developer passionate about
+            innovation, creativity and actualizing visions by solving problems
+            .Design focused and curious full-stack web developer passionate
+            about innovation, creativity and actualizing visions by solving
+            problems. Design focused and curious full-stack web developer
+            passionate about innovation, creativity and actualizing visions by
+            solving problems .
+          </p>
+        </div>
+      </ProjectContainerOne>
+      <ProjectContainerOne>
+        <div>
+          <h4>Delete Screenshots</h4>
+          <div>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Sanity.io</span>
+            <span>Stripe</span>
+          </div>
+          <p>
+            Design focused and curious full-stack web developer passionate about
+            innovation, creativity and actualizing visions by solving problems
+            .Design focused and curious full-stack web developer passionate
+            about innovation, creativity and actualizing visions by solving
+            problems. Design focused and curious full-stack web developer
+            passionate about innovation, creativity and actualizing visions by
+            solving problems .
+          </p>
+        </div>
+      </ProjectContainerOne>
+      <ProjectContainerOne>
+        <div>
+          <h4>Sneaker Collector</h4>
+          <div>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Sanity.io</span>
+            <span>Stripe</span>
+          </div>
+          <p>
+            Design focused and curious full-stack web developer passionate about
+            innovation, creativity and actualizing visions by solving problems
+            .Design focused and curious full-stack web developer passionate
+            about innovation, creativity and actualizing visions by solving
+            problems. Design focused and curious full-stack web developer
+            passionate about innovation, creativity and actualizing visions by
+            solving problems .
+          </p>
+        </div>
+      </ProjectContainerOne>
+      <ProjectContainerOne>
+        <div>
+          <h4>Github Profile</h4>
+          <div>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Sanity.io</span>
+            <span>Stripe</span>
+          </div>
+          <p>
+            Design focused and curious full-stack web developer passionate about
+            innovation, creativity and actualizing visions by solving problems
+            .Design focused and curious full-stack web developer passionate
+            about innovation, creativity and actualizing visions by solving
+            problems. Design focused and curious full-stack web developer
+            passionate about innovation, creativity and actualizing visions by
+            solving problems .
+          </p>
+        </div>
+      </ProjectContainerOne>
+      <ProjectContainerOne>
+        <div>
+          <h4>Hangman</h4>
+          <div>
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Sanity.io</span>
+            <span>Stripe</span>
+          </div>
+          <p>
+            Design focused and curious full-stack web developer passionate about
+            innovation, creativity and actualizing visions by solving problems
+            .Design focused and curious full-stack web developer passionate
+            about innovation, creativity and actualizing visions by solving
+            problems. Design focused and curious full-stack web developer
+            passionate about innovation, creativity and actualizing visions by
+            solving problems .
+          </p>
+        </div>
+      </ProjectContainerOne>
+    </OtherProjectsContainer>
   </section>
 )
 

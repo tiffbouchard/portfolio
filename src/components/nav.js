@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const Nav = styled.nav`
-  width: 100%;
+  maxwidth: 100%;
   list-style-type: none;
   display: flex;
   justify-content: space-around;

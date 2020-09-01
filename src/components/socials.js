@@ -5,12 +5,12 @@ import styled from "styled-components"
 const NavBar = styled.ul`
   list-style-type: none;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   transition: 0.5s;
   padding: 0;
   margin: 0;
-  position: fixed;
+  position: sticky;
+  top: 20px;
   li {
     padding: 10px;
     a {
