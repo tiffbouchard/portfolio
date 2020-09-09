@@ -37,8 +37,7 @@ function SEO({ description, lang, meta, title }) {
       meta={[
         {
           name: `description`,
-          content:
-            "Full-stack developer from Toronto. Passionate about design, innovation and creativity",
+          content: metaDescription,
         },
         {
           property: `og:title`,

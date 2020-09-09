@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Tiffany Bouchard | Software Developer`,
-    description: `Tiffany is a Software Developer from Toronto`,
+    description:
+      "Full-stack developer from Toronto. Passionate about design, innovation and creativity.",
     author: `@tiffbouchard`,
   },
   plugins: [

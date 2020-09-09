@@ -1,4 +1,5 @@
 import React from "react"
+import SEO from "../components/seo"
 
 import Socials from "../components/socials"
 import Nav from "../components/nav.js"
@@ -13,6 +14,7 @@ import "../../src/global.css"
 const IndexPage = props => {
   return (
     <>
+      <SEO title="Home" />
       <Socials />
       <Nav />
       <Landing />
@@ -20,6 +22,7 @@ const IndexPage = props => {
       <Projects />
       <Contact />
       <Footer />
+      <SEO />
     </>
   )
 }
