@@ -22,15 +22,15 @@
 
 @font-face {
   font-family: NeueMontreal;
-  src: url(../public/static/fonts/NeueMontreal-Regular.otf);
+  src: url(../static/fonts/NeueMontreal-Regular.otf);
 }
 
 @font-face {
   font-family: NeueMontrealLight;
-  src: url(../public/static/fonts/NeueMontreal-Light.otf);
+  src: url(../static/fonts/NeueMontreal-Light.otf);
 }
 
 @font-face {
   font-family: NMBold;
-  src: url(../public/static/fonts/NeueMontreal-Bold.otf);
+  src: url(../static/fonts/NeueMontreal-Bold.otf);
 }
