@@ -48,3 +48,4 @@ Click [here](https://tiffbouchard.com) for live site
 - Better placement for socials
 - Add better accessibility - especially for navigation, can only use onClick for buttons, but don't want to have focus state (figure something out or keep focus state)
 - Possibly refactor styled components after doing more research/docs
+- Learn more about SEO in Gatsby
