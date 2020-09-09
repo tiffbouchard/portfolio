@@ -1,4 +1,5 @@
 <center>
+ 
  <a href="https://www.tiffbouchard.com">
     <img alt="tiff" src="src/images/logo.png" width="60" />
   </a>
