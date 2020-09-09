@@ -59,7 +59,7 @@ const LandingElementsContainer = styled.div`
       font-size: 27px;
       padding-left: 7px;
       @media (max-width: 1280px) {
-        font-size: 23px;
+        font-size: 22px;
       }
       @media (max-width: 550px) {
         font-size: 15px;
