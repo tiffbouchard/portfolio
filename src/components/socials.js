@@ -1,52 +1,58 @@
 import React from "react"
 import { Trail } from "react-spring/renderprops"
 import styled from "styled-components"
+import Github from "./icons/hollow-cut-github.svg"
+import Ig from "./icons/hollow-cut-instagram.svg"
+import Linkedin from "./icons/hollow-cut-linkedin.svg"
+import Twitter from "./icons/hollow-cut-twitter.svg"
 
 const NavBar = styled.ul`
+  height: 90vh;
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  transition: 0.5s;
-  padding: 0;
-  margin: 0;
-  position: sticky;
-  top: 20px;
+  flex-direction: column;
+  position: fixed;
+  justify-content: flex-end;
+  background-color: transparent;
   li {
-    padding: 10px;
+    background-color: transparent;
     a {
-      font-family: NeueMontreal;
-      font-size: 15px;
-      text-decoration: none;
-      color: black;
-      @media (max-width: 950px) {
-        font-size: 20px;
-      }
-      @media (max-width: 600px) {
-        font-size: 10px;
-      }
-      @media (max-height: 650px) {
-        font-size: 10px;
-      }
-      &:hover {
-        cursor: pointer;
-        transition-duration: 0.5s;
-        -webkit-text-fill-color: #f0f0f0;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
-      }
+      background-color: transparent;
+    }
+  }
+  .icon {
+    background-color: transparent;
+    height: 25px;
+    padding: 8px;
+    opacity: 0.2;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      opacity: 1;
     }
   }
 `
 
 const items = [
-  { title: "Github", key: 1, href: "http://www.github.com/tiffbouchard" },
-  { title: "Instagram", key: 2, href: "http://www.instagram.com/tiffbouchard" },
   {
-    title: "LinkedIn",
+    icon: <Github className="icon" />,
+    key: 1,
+    href: "http://www.github.com/tiffbouchard",
+  },
+  {
+    icon: <Ig className="icon" />,
+    key: 2,
+    href: "http://www.instagram.com/tiffbouchard",
+  },
+  {
+    icon: <Linkedin className="icon" />,
     key: 3,
     href: "http://www.linkedin.com/in/tiffanybouchard",
   },
-  { title: "Twitter", key: 4, href: "http://www.twitter.com/tiffbouchard" },
+  {
+    icon: <Twitter className="icon" />,
+    key: 4,
+    href: "http://www.twitter.com/tiffbouchard",
+  },
 ]
 
 const Socials = () => (
@@ -56,12 +62,12 @@ const Socials = () => (
       keys={item => item.key}
       from={{ opacity: 0 }}
       to={{ opacity: 1 }}
-      config={{ delay: 1000, duration: 3000 }}
+      config={{ delay: 300, duration: 1000 }}
     >
       {item => props => (
         <li>
           <a style={props} href={item.href} target="blank">
-            {item.title}
+            {item.icon}
           </a>
         </li>
       )}

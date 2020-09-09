@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 import emailjs from "emailjs-com"
 import styled from "styled-components"
 
@@ -94,9 +96,14 @@ class Form extends Component {
   }
 
   render() {
+    AOS.init()
     return (
-      <section className="sub-section">
-        <FormContainer>
+      <section className="sub-section" id="contact">
+        <FormContainer
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
           <h1>CONTACT</h1>
           <form onSubmit={this.handleSubmit}>
             <input

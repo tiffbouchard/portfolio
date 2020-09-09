@@ -1,7 +1,10 @@
 import React from "react"
+import scrollTo from "gatsby-plugin-smoothscroll"
+import { Spring } from "react-spring/renderprops"
 import styled from "styled-components"
 
 const Nav = styled.nav`
+  z-index: 1000;
   maxwidth: 100%;
   list-style-type: none;
   display: flex;
@@ -12,7 +15,7 @@ const Nav = styled.nav`
   right: 0;
   padding-top: 15px;
   background-color: #f0faf1;
-    a {
+    button {
       padding: 10px;
       font-family: NMBold;
       background: none;
@@ -25,11 +28,15 @@ const Nav = styled.nav`
       -webkit-text-stroke-width: 1.3px;
       -webkit-text-stroke-color: black;
       &:hover {
+        cursor: pointer;
         text-shadow: 2px 2px;
         transition-duration: 0.5s;
       }
+      &:focus {
+      outline: none;
+    }
       @media (max-width: 950px) {
-      font-size: 50px;
+      font-size: 30px;
     }
       @media (max-width: 600px) {
         font-size: 20px;
@@ -38,17 +45,32 @@ const Nav = styled.nav`
       font-size: 20px;
     }
     }
+    
   }
 `
 
 const NavBar = () => {
   return (
-    <Nav>
-      <a href="#about">ABOUT</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#contact">CONTACT</a>
-      <a href="#resume">RESUME</a>
-    </Nav>
+    <Spring
+      from={{ opacity: 0 }}
+      to={{ opacity: 1 }}
+      config={{ delay: 300, duration: 1000 }}
+    >
+      {props => (
+        <Nav style={props}>
+          <button onClick={() => scrollTo("#about")} href="#about">
+            ABOUT
+          </button>
+          <button onClick={() => scrollTo("#projects")} href="#projects">
+            PROJECTS
+          </button>
+          <button onClick={() => scrollTo("#contact")} href="#contact">
+            CONTACT
+          </button>
+          <button href="#resume">RESUME</button>
+        </Nav>
+      )}
+    </Spring>
   )
 }
 

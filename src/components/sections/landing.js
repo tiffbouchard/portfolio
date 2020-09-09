@@ -33,25 +33,47 @@ const LandingElementsContainer = styled.div`
     h1 {
       letter-spacing: 1px;
       font-family: "NMBold";
-      font-size: 180px;
+      font-size: 190px;
       margin: 0px;
+      transition: 0.5s;
+      @media (max-width: 1280px) {
+        font-size: 150px;
+      }
+      @media (max-width: 800px) {
+        font-size: 120px;
+      }
+      @media (max-width: 550px) {
+        font-size: 90px;
+      }
+      @media (max-width: 420px) {
+        font-size: 60px;
+      }
     }
     p {
       font-family: "NeueMontreal";
       margin-top: 0px;
       font-size: 30px;
       padding-left: 7px;
+      @media (max-width: 950px) {
+        font-size: 30px;
+      }
+      @media (max-width: 550px) {
+        font-size: 25px;
+      }
+      @media (max-width: 420px) {
+        font-size: 15px;
+      }
     }
   }
 `
 
 const LandingSection = () => {
   return (
-    <section className="landing-section">
+    <section className="landing-section" id="home">
       <Spring
         from={{ opacity: 0 }}
         to={{ opacity: 1 }}
-        config={{ delay: 1000, duration: 2000 }}
+        config={{ delay: 300, duration: 1000 }}
       >
         {props => (
           <LandingElementsContainer style={props}>
