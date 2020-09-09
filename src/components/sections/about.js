@@ -5,17 +5,19 @@ import styled from "styled-components"
 
 const AboutElementsContainer = styled.div`
   max-width: 900px;
-  margin-bottom: 50px;
   h1 {
+    margin: 0px 30px 50px 30px;
     font-size: 47px;
     font-family: "NMBold";
   }
   p {
+    margin: 0px 30px 50px 30px;
     font-family: "NeueMontreal";
     text-align: justify;
   }
 `
 const SkillsElementsContainer = styled.div`
+  margin: 0px 30px 50px 30px;
   h1 {
     font-size: 47px;
     font-family: "NMBold";
@@ -23,6 +25,7 @@ const SkillsElementsContainer = styled.div`
   div {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     ul {
       font-family: "NeueMontreal";
       list-style-type: none;

@@ -36,29 +36,33 @@ const LandingElementsContainer = styled.div`
       font-size: 190px;
       margin: 0px;
       transition: 0.5s;
+      margin: 0 30px;
       @media (max-width: 1280px) {
         font-size: 150px;
       }
-      @media (max-width: 800px) {
+      @media (max-width: 920px) {
         font-size: 120px;
       }
-      @media (max-width: 550px) {
-        font-size: 90px;
+      @media (max-width: 690px) {
+        font-size: 100px;
       }
-      @media (max-width: 420px) {
-        font-size: 60px;
+      @media (max-width: 570px) {
+        font-size: 80px;
+      }
+      @media (max-width: 400px) {
+        font-size: 50px;
       }
     }
     p {
       font-family: "NeueMontreal";
-      margin-top: 0px;
+      margin: 0 30px;
       font-size: 27px;
       padding-left: 7px;
-      @media (max-width: 950px) {
-        font-size: 27px;
+      @media (max-width: 1280px) {
+        font-size: 23px;
       }
       @media (max-width: 550px) {
-        font-size: 20px;
+        font-size: 15px;
       }
       @media (max-width: 420px) {
         font-size: 15px;

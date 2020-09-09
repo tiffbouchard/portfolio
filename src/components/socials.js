@@ -14,6 +14,7 @@ const NavBar = styled.ul`
   position: fixed;
   justify-content: flex-end;
   background-color: transparent;
+  margin-left: -20px;
   li {
     background-color: transparent;
     a {
@@ -29,6 +30,9 @@ const NavBar = styled.ul`
     &:hover {
       opacity: 1;
     }
+  }
+  @media (max-width: 1050px) {
+    position: absolute;
   }
 `
 

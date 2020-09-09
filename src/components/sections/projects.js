@@ -12,10 +12,13 @@ const MainProjectsContainer = styled.div`
     font-size: 47px;
     font-family: "NMBold";
     text-align: right;
-    margin-bottom: 40px;
+    margin: 0 30px 40px 30px;
   }
-  @media (max-width: 420px) {
+  @media (max-width: 830px) {
     width: 100%;
+    h1 {
+      margin: 30px;
+    }
   }
 `
 
@@ -28,8 +31,7 @@ const OtherProjectsContainer = styled.div`
 
 const ProjectContainerOne = styled.div`
   display: flex;
-  margin-bottom: 0px;
-  margin-top: 0px;
+  margin: 0px 30px;
   div {
     display: flex;
     flex-direction: column;
@@ -63,13 +65,11 @@ const ProjectContainerOne = styled.div`
   img {
     height: 400px;
     margin-left: 30px;
-    &:hover {
-      opacity: 0.5;
-    }
   }
-  @media (max-width: 420px) {
+  @media (max-width: 830px) {
     display: block;
     flex-wrap: wrap;
+    margin: 30px;
     img {
       max-width: 100%;
       height: auto;
@@ -82,8 +82,7 @@ const ProjectContainerTwo = styled.div`
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 60px 30px;
   div {
     display: flex;
     flex-direction: column;
@@ -117,35 +116,16 @@ const ProjectContainerTwo = styled.div`
   }
   img {
     margin-right: 30px;
-    max-width: 400px;
+    max-width: 500px;
   }
-  @media (max-width: 1280px) {
+  @media (max-width: 830px) {
     display: block;
+    flex-wrap: wrap;
+    margin: 30px;
     img {
       max-width: 100%;
       height: auto;
-      margin-right: 0px;
-  }
-  @media (max-width: 800px) {
-    display: block;
-    img {
-      max-width: 100%;
-      height: auto;
-      margin-right: 0px;
-  }
-  @media (max-width: 550px) {
-    display: block;
-    img {
-      max-width: 100%;
-      height: auto;
-      margin-right: 0px;
-  }
-  @media (max-width: 420px) {
-    display: block;
-    img {
-      max-width: 100%;
-      height: auto;
-      margin-right: 0px;
+      margin-left: 0px;
     }
   }
 `

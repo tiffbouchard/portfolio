@@ -9,6 +9,7 @@ const Nav = styled.nav`
   maxwidth: 100%;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   position: fixed;
   top: 0;
@@ -39,15 +40,8 @@ const Nav = styled.nav`
       @media (max-width: 950px) {
       font-size: 30px;
     }
-      @media (max-width: 600px) {
-        font-size: 20px;
-    }
-    @media (max-height: 650px) {
-      font-size: 20px;
-    }
-    }
-    
   }
+}
 `
 
 const NavBar = () => {

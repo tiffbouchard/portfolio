@@ -24,11 +24,12 @@ const FormContainer = styled.form`
     }
     input,
     textarea {
+      width: 50vw;
+      max-width: 500px;
       font-size: 16px;
       font-family: "NeueMontreal";
       margin: 5px;
       padding: 15px;
-      width: 500px;
       border: 1px solid black;
       border-radius: 2px;
       &:focus {
