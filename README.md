@@ -1,14 +1,16 @@
-<center>
- 
+ <p align="center">
  <a href="https://www.tiffbouchard.com">
     <img alt="tiff" src="src/images/logo.png" width="60" />
   </a>
+ </p>
 <h1 align="center">
   tiffbouchard.com </h1>
 
+<center>
+ 
  [![Netlify Status](https://api.netlify.com/api/v1/badges/e0df5966-3a7c-40bb-9cb8-03029de09f6a/deploy-status)](https://app.netlify.com/sites/tiffbouchard/deploys) 
 
- </center>
+</center>
 
 <img src="./static/images/screenshot.png">
 
