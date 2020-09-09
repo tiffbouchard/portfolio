@@ -99,7 +99,9 @@ const ProjectContainerTwo = styled.div`
 `
 
 const ProjectsSection = props => {
-  AOS.init()
+  React.useEffect(() => {
+    AOS.init()
+  })
   return (
     <section className="sub-section" id="projects">
       <MainProjectsContainer>

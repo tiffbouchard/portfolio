@@ -67,7 +67,7 @@ const LandingElementsContainer = styled.div`
   }
 `
 
-const LandingSection = () => {
+const LandingSection = props => {
   return (
     <section className="landing-section" id="home">
       <Spring

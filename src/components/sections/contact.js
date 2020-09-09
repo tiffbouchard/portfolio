@@ -95,8 +95,11 @@ class Form extends Component {
     this.setState({ [e.target.name]: e.target.value })
   }
 
-  render() {
+  componentDidMount() {
     AOS.init()
+  }
+
+  render() {
     return (
       <section className="sub-section" id="contact">
         <FormContainer
