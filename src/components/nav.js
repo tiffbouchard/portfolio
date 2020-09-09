@@ -21,7 +21,7 @@ const Nav = styled.nav`
       padding: 10px;
       font-family: NMBold;
       background: none;
-      font-size: 45px;
+      font-size: 50px;
       border: none;
       color: black;
       transition: 0.5s;
@@ -38,7 +38,7 @@ const Nav = styled.nav`
       outline: none;
     }
       @media (max-width: 950px) {
-      font-size: 30px;
+      font-size: 40px;
     }
   }
 }

@@ -49,8 +49,8 @@ const LandingElementsContainer = styled.div`
       @media (max-width: 570px) {
         font-size: 80px;
       }
-      @media (max-width: 400px) {
-        font-size: 50px;
+      @media (max-width: 430px) {
+        font-size: 60px;
       }
     }
     p {
