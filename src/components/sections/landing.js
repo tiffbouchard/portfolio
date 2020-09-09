@@ -81,7 +81,7 @@ const LandingSection = props => {
               <h1>TIFFANY BOUCHARD</h1>
               <p>
                 Full-stack developer passionate about actualizing innovation,
-                creativity and design.
+                creativity and beautiful design.
               </p>
             </div>
           </LandingElementsContainer>

@@ -2,6 +2,7 @@ import React from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import styled from "styled-components"
+import OJOS from "../../../static/images/ojos.png"
 
 const MainProjectsContainer = styled.div`
   max-width: 900px;
@@ -11,10 +12,16 @@ const MainProjectsContainer = styled.div`
     text-align: right;
     margin-bottom: 40px;
   }
+  @media (max-width: 420px) {
+    width: 100%;
+  }
 `
 
 const OtherProjectsContainer = styled.div`
   max-width: 900px;
+  @media (max-width: 420px) {
+    width: 100%;
+  }
 `
 
 const ProjectContainerOne = styled.div`
@@ -25,6 +32,7 @@ const ProjectContainerOne = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     h4 {
       font-family: "NMBold";
       font-size: 30px;
@@ -40,6 +48,7 @@ const ProjectContainerOne = styled.div`
         font-size: 12px;
         padding: 5px;
         margin-right: 5px;
+        margin-bottom: 5px;
         border-radius: 2px;
         border: solid 1px;
       }
@@ -56,6 +65,15 @@ const ProjectContainerOne = styled.div`
       opacity: 0.5;
     }
   }
+  @media (max-width: 420px) {
+    display: block;
+    flex-wrap: wrap;
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-left: 0px;
+    }
+  }
 `
 
 const ProjectContainerTwo = styled.div`
@@ -68,6 +86,7 @@ const ProjectContainerTwo = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     h4 {
       font-family: "NMBold";
       font-size: 30px;
@@ -83,8 +102,10 @@ const ProjectContainerTwo = styled.div`
         font-size: 12px;
         padding: 5px;
         margin-right: 5px;
+        margin-bottom: 5px;
         border-radius: 2px;
         border: solid 1px;
+        flex-wrap: wrap;
       }
     }
     p {
@@ -95,6 +116,35 @@ const ProjectContainerTwo = styled.div`
   img {
     margin-right: 30px;
     max-width: 400px;
+  }
+  @media (max-width: 1280px) {
+    display: block;
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-right: 0px;
+  }
+  @media (max-width: 800px) {
+    display: block;
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-right: 0px;
+  }
+  @media (max-width: 550px) {
+    display: block;
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-right: 0px;
+  }
+  @media (max-width: 420px) {
+    display: block;
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-right: 0px;
+    }
   }
 `
 
@@ -124,7 +174,7 @@ const ProjectsSection = props => {
               <span>React</span>
               <span>Next.js</span>
               <span>Sanity.io</span>
-              <span>Stripe</span>
+              <span>Shopify</span>
               <span>Vercel</span>
             </div>
             <p>
@@ -140,7 +190,7 @@ const ProjectsSection = props => {
             </p>
           </div>
           <div>
-            <img src="https://i.imgur.com/jfrwOT3.png" />
+            <img src={OJOS} />
           </div>
         </ProjectContainerOne>
         <ProjectContainerTwo
@@ -230,31 +280,6 @@ const ProjectsSection = props => {
           data-aos-delay="250"
         >
           <div>
-            <h4>How Risky?</h4>
-            <div>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Materialize</span>
-              <span>Python</span>
-              <span>Django</span>
-              <span>Postgresql</span>
-              <span>AWS S3</span>
-              <span>COVID-19 API</span>
-            </div>
-            <p>
-              An app that displays to the users COVID statistics based on their
-              given location. A user can also take risk assessments for certain
-              activities as well as add, delete and update activities and create
-              schedules. Collaborated with a team of three other developers.
-            </p>
-          </div>
-        </ProjectContainerOne>
-        <ProjectContainerOne
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="250"
-        >
-          <div>
             <h4>Ebay Automation</h4>
             <div>
               <span>Python</span>
@@ -282,7 +307,7 @@ const ProjectsSection = props => {
             </p>
           </div>
         </ProjectContainerOne>
-        <ProjectContainerOne
+        {/* <ProjectContainerOne
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="250"
@@ -300,9 +325,9 @@ const ProjectsSection = props => {
               An app that allows you to keep track of your sneaker collection as
               well as cleaning schedules. You can add and delete sneakers and
               cleaning schedules as well.
-            </p>
-          </div>
-        </ProjectContainerOne>
+            </p> */}
+        {/* </div>
+        </ProjectContainerOne> */}
         <ProjectContainerOne
           data-aos="fade-up"
           data-aos-duration="1000"
@@ -320,25 +345,6 @@ const ProjectsSection = props => {
               A simple app that allows you to search the Github API and display
               a profile for that specific user. It displays, followers, stars,
               followings and repository information along with respective links.
-            </p>
-          </div>
-        </ProjectContainerOne>
-        <ProjectContainerOne
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="250"
-        >
-          <div>
-            <h4>Hangman</h4>
-            <div>
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Javascript</span>
-            </div>
-            <p>
-              My first project done with vanilla HTML, CSS and Javascript. A
-              simple hangman game with a lot of bugs, I want to fix this up but
-              also like having it as a throwback.
             </p>
           </div>
         </ProjectContainerOne>

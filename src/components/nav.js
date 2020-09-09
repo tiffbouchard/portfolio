@@ -2,6 +2,7 @@ import React from "react"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { Spring } from "react-spring/renderprops"
 import styled from "styled-components"
+import downloadFile from "../../static/documents/tiffanybouchardresume.pdf"
 
 const Nav = styled.nav`
   z-index: 1000;
@@ -14,7 +15,7 @@ const Nav = styled.nav`
   left: 0;
   right: 0;
   padding-top: 15px;
-  background-color: #f0faf1;
+  background-color: #dae7dc;
     button {
       padding: 10px;
       font-family: NMBold;
@@ -24,7 +25,7 @@ const Nav = styled.nav`
       color: black;
       transition: 0.5s;
       text-decoration: none;
-      -webkit-text-fill-color: #f0faf1;
+      -webkit-text-fill-color: #dae7dc;
       -webkit-text-stroke-width: 1.3px;
       -webkit-text-stroke-color: black;
       &:hover {
@@ -67,7 +68,11 @@ const NavBar = () => {
           <button onClick={() => scrollTo("#contact")} href="#contact">
             CONTACT
           </button>
-          <button href="#resume">RESUME</button>
+          <button>
+            <a href={downloadFile} download>
+              RESUME
+            </a>
+          </button>
         </Nav>
       )}
     </Spring>

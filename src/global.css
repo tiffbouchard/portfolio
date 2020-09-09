@@ -1,5 +1,5 @@
 * {
-  background-color:#f0faf1;
+  background-color:#dae7dc;
 }
 
 .landing-section {
@@ -18,6 +18,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: black;
 }
 
 @font-face {

@@ -12,7 +12,7 @@ const FooterContainer = styled.footer`
   left: 0;
   right: 0;
   padding-top: 15px;
-  background-color: #f0faf1;
+  background-color: #dae7dc;
     a {
       padding: 10px;
       font-family: NeueMontreal;

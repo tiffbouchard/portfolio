@@ -48,23 +48,17 @@ const AboutSection = props => {
         >
           <h1>ABOUT</h1>
           <p>
-            I am a full-stack software developer based in Toronto. I strive to
-            combine my love for beautiful design with my passion for building
-            things with code. I aim to combine my wide range of skills and
-            expereinces and things I like to build some great things. When I am
-            not behind my screen, I'm probably travelling, staying active, or
-            listening to good music and eating good food. I am a software
-            developer based in Toronto, ON and I strive to combine my love for
-            beautiful design with my passion for building things with code. I
-            aim to combine my wide range of skills and expereinces and things I
-            like to build some great things I am a software developer based in
-            Toronto, ON and I strive to combine my love for beautiful design
-            with my passion for building things with code. I aim to combine my
-            wide range of skills and expereinces and things I like to build some
-            great things. I am a software developer based in Toronto, ON and I
-            strive to combine my love for beautiful design with my passion for
-            building things with code. I aim to combine my wide range of skills
-            and expereinces and things I like to build some great things
+            I am a full-stack software developer based in Toronto. I got my BA
+            in Philosophy and Criminology from the University of Toronto and
+            graduted from General Assembly's Software Engineering Immersive
+            program in July 2020.
+            <br />
+            <br />I strive to combine my love for design and creative visions
+            with my passion for building things with code.
+            <br />
+            <br />
+            When I am not behind my screen, I'm probably travelling, staying
+            active, or listening to good music and eating good food.
           </p>
         </AboutElementsContainer>
         <SkillsElementsContainer
