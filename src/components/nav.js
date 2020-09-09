@@ -37,7 +37,7 @@ const Nav = styled.nav`
       &:focus {
       outline: none;
     }
-      @media (max-width: 950px) {
+      @media (max-width: 960px) {
       font-size: 40px;
     }
   }

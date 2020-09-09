@@ -36,6 +36,12 @@ const SkillsElementsContainer = styled.div`
     }
   }
 `
+
+const Anchor = styled.div`
+  height: 100%;
+  min-height: 180px;
+`
+
 const AboutSection = props => {
   React.useEffect(() => {
     AOS.init()
@@ -43,7 +49,8 @@ const AboutSection = props => {
 
   return (
     <section className="sub-section">
-      <div id="about">
+      <Anchor id="about" />
+      <div>
         <AboutElementsContainer
           data-aos="fade-up"
           data-aos-delay="250"
