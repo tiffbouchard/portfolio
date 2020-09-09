@@ -48,13 +48,13 @@ const AboutSection = props => {
         >
           <h1>ABOUT</h1>
           <p>
-            I am a full-stack software developer based in Toronto. I got my BA
-            in Philosophy and Criminology from the University of Toronto and
+            I am a full-stack developer based in Toronto. I received my BA in
+            Philosophy and Criminology from the University of Toronto and
             graduted from General Assembly's Software Engineering Immersive
             program in July 2020.
             <br />
             <br />I strive to combine my love for design and creative visions
-            with my passion for building things with code.
+            with my passion for logic and technology.
             <br />
             <br />
             When I am not behind my screen, I'm probably travelling, staying

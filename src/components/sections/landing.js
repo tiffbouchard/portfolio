@@ -52,13 +52,13 @@ const LandingElementsContainer = styled.div`
     p {
       font-family: "NeueMontreal";
       margin-top: 0px;
-      font-size: 30px;
+      font-size: 27px;
       padding-left: 7px;
       @media (max-width: 950px) {
-        font-size: 30px;
+        font-size: 27px;
       }
       @media (max-width: 550px) {
-        font-size: 25px;
+        font-size: 20px;
       }
       @media (max-width: 420px) {
         font-size: 15px;

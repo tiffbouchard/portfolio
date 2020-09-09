@@ -3,6 +3,8 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import styled from "styled-components"
 import OJOS from "../../../static/images/ojos.png"
+import ExternalLinkIcon from "../icons/external.svg"
+import Github from "../icons/hollow-cut-github.svg"
 
 const MainProjectsContainer = styled.div`
   max-width: 900px;
@@ -169,7 +171,17 @@ const ProjectsSection = props => {
           data-aos-delay="250"
         >
           <div>
-            <h4>OJOS</h4>
+            <h4>
+              OJOS
+              <a href="http://ojos.vercel.app" target="blank">
+                <ExternalLinkIcon
+                  style={{ height: "20px", marginLeft: "5px" }}
+                />
+              </a>
+              <a href="http://github.com/tiffbouchard/ojos" target="blank">
+                <Github style={{ height: "20px", marginLeft: "5px" }} />
+              </a>
+            </h4>
             <div>
               <span>React</span>
               <span>Next.js</span>
@@ -199,7 +211,17 @@ const ProjectsSection = props => {
           data-aos-delay="250"
         >
           <div>
-            <h4>Project Six</h4>
+            <h4>
+              iome (WIP)
+              {/* <a href="http://ojos.vercel.app" target="blank">
+                <ExternalLinkIcon
+                  style={{ height: "20px", marginLeft: "5px" }}
+                />
+              </a> */}
+              <a href="http://github.com/tiffbouchard/iome" target="blank">
+                <Github style={{ height: "20px", marginLeft: "5px" }} />
+              </a>
+            </h4>
             <div>
               <span>React</span>
               <span>Express</span>
@@ -229,7 +251,17 @@ const ProjectsSection = props => {
           data-aos-delay="250"
         >
           <div>
-            <h4>CHEF.DEV</h4>
+            <h4>
+              CHEF
+              <a href="http://chefdev.herokuapp.com" target="blank">
+                <ExternalLinkIcon
+                  style={{ height: "20px", marginLeft: "5px" }}
+                />
+              </a>
+              <a href="http://github.com/tiffbouchard/chef.dev" target="blank">
+                <Github style={{ height: "20px", marginLeft: "5px" }} />
+              </a>
+            </h4>
             <div>
               <span>React</span>
               <span>Material-UI</span>
@@ -256,7 +288,17 @@ const ProjectsSection = props => {
           data-aos-delay="250"
         >
           <div>
-            <h4>Forkpitch</h4>
+            <h4>
+              Forkpitch
+              <a href="http://forkpitch.herokuapp.com" target="blank">
+                <ExternalLinkIcon
+                  style={{ height: "20px", marginLeft: "5px" }}
+                />
+              </a>
+              <a href="http://github.com/tiffbouchard/forkpitch" target="blank">
+                <Github style={{ height: "20px", marginLeft: "5px" }} />
+              </a>
+            </h4>
             <div>
               <span>HTML</span>
               <span>CSS</span>
@@ -280,7 +322,15 @@ const ProjectsSection = props => {
           data-aos-delay="250"
         >
           <div>
-            <h4>Ebay Automation</h4>
+            <h4>
+              Ebay Automation (WIP)
+              <a
+                href="http://github.com/tiffbouchard/ebay-automation"
+                target="blank"
+              >
+                <Github style={{ height: "20px", marginLeft: "5px" }} />
+              </a>
+            </h4>
             <div>
               <span>Python</span>
               <span>Ebay API</span>
@@ -297,7 +347,15 @@ const ProjectsSection = props => {
           data-aos-delay="250"
         >
           <div>
-            <h4>Delete Screenshots</h4>
+            <h4>
+              Delete Screenshots
+              <a
+                href="http://github.com/tiffbouchard/delete-screenshots"
+                target="blank"
+              >
+                <Github style={{ height: "20px", marginLeft: "5px" }} />
+              </a>
+            </h4>
             <div>
               <span>Python</span>
             </div>
@@ -334,7 +392,20 @@ const ProjectsSection = props => {
           data-aos-delay="250"
         >
           <div>
-            <h4>Github Profile</h4>
+            <h4>
+              GitFile
+              <a href="http://gitfile.netlify.app" target="blank">
+                <ExternalLinkIcon
+                  style={{ height: "20px", marginLeft: "5px" }}
+                />
+              </a>
+              <a
+                href="http://github.com/tiffbouchard/github-users"
+                target="blank"
+              >
+                <Github style={{ height: "20px", marginLeft: "5px" }} />
+              </a>
+            </h4>
             <div>
               <span>HTML</span>
               <span>CSS</span>
@@ -343,8 +414,9 @@ const ProjectsSection = props => {
             </div>
             <p>
               A simple app that allows you to search the Github API and display
-              a profile for that specific user. It displays, followers, stars,
-              followings and repository information along with respective links.
+              a concise profile for that specific user with a pretty UI. It
+              displays, followers, stars, followings and repository information
+              along with respective links.
             </p>
           </div>
         </ProjectContainerOne>
