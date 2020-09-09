@@ -1,14 +1,16 @@
-<center>
+ <p align="center">
  <a href="https://www.tiffbouchard.com">
     <img alt="tiff" src="src/images/logo.png" width="60" />
   </a>
-</p>
+ </p>
 <h1 align="center">
   tiffbouchard.com </h1>
-
- [![Netlify Status](https://api.netlify.com/api/v1/badges/e0df5966-3a7c-40bb-9cb8-03029de09f6a/deploy-status)](https://app.netlify.com/sites/tiffbouchard/deploys) 
-
- </center>
+ 
+ <p align="center">
+  <a href="https://app.netlify.com/sites/tiffbouchard/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/e0df5966-3a7c-40bb-9cb8-03029de09f6a/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
 
 <img src="./static/images/screenshot.png">
 
@@ -46,3 +48,4 @@ Click [here](https://tiffbouchard.com) for live site
 - Better placement for socials
 - Add better accessibility - especially for navigation, can only use onClick for buttons, but don't want to have focus state (figure something out or keep focus state)
 - Possibly refactor styled components after doing more research/docs
+- Learn more about SEO in Gatsby
