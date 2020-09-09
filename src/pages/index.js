@@ -14,15 +14,15 @@ import "../../src/global.css"
 const IndexPage = props => {
   return (
     <>
-      <SEO title="Home" />
-      <Socials />
-      <Nav />
-      <Landing />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-      <SEO />
+      <SEO title="Home">
+        <Socials />
+        <Nav />
+        <Landing />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+      </SEO>
     </>
   )
 }
