@@ -3,7 +3,6 @@
  <a href="https://www.tiffbouchard.com">
     <img alt="tiff" src="src/images/logo.png" width="60" />
   </a>
-</p>
 <h1 align="center">
   tiffbouchard.com </h1>
 
