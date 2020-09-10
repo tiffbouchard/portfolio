@@ -65,7 +65,7 @@ const AboutSection = props => {
           <h1>ABOUT</h1>
           <p>
             I am a full-stack developer based in Toronto. After graduating from the University of Toronto with a BA in
-            Philosophy and Criminology, I revisted my interest in development and enrolled in General Assembly's Software Engineering Immersive program. I possess a deep interest for all aspects of development, from learning new languages and frameworks to understanding how computers work. I learn a little more everyday and have no intentions of stopping. 
+            Philosophy and Criminology, I revisited my interest in development and enrolled in General Assembly's Software Engineering Immersive program. I possess a deep interest for all aspects of development, from learning new languages and frameworks to understanding how computers work. I learn a little more everyday and have no intentions of stopping. 
             <br />
             <br />
     My love for good design influences my desire to write clean code and create beautiful interfaces that provide seamless UX. 
