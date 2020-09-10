@@ -14,6 +14,12 @@ const AboutElementsContainer = styled.div`
     margin: 0px 30px 50px 30px;
     font-family: "NeueMontreal";
     text-align: justify;
+a {
+  color: black;
+&:hover {
+  color: black;
+}
+}
   }
 `
 const SkillsElementsContainer = styled.div`
@@ -66,7 +72,7 @@ const AboutSection = props => {
             <br />
             <br />
             When I am not behind my screen, I'm probably travelling, staying
-            active, or listening to music, watching movies and feasting on some bomb-ass food <a href="http://instagram.com/weatingood">(Food gram plug)</a>.  
+            active, or listening to music, watching movies and feasting on some bomb-ass food <a href="http://instagram.com/weatingood" target="blank">(food gram plug🍴)</a>.  
           </p>
         </AboutElementsContainer>
         <SkillsElementsContainer
