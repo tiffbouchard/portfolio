@@ -1,5 +1,9 @@
 * {
-  background-color:#dae7dc;
+  font-family: "NeueMontreal", sans-serif;
+}
+
+body {
+  background-color: #efeee9;
 }
 
 .landing-section {
