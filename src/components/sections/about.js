@@ -12,6 +12,12 @@ const AboutElementsContainer = styled.div`
   p {
     margin: 0px 30px 50px 30px;
     text-align: justify;
+    a {
+      color: black;
+      &:hover {
+        color: black;
+      }
+    }
   }
 `
 const SkillsElementsContainer = styled.div`
@@ -47,18 +53,26 @@ const AboutSection = props => {
           data-aos-duration="1000"
         >
           <p>
-            Adaptable full-stack developer passionate about actualizing
-            innovation & creativity. I am a full-stack developer based in
-            Toronto. I received my BA in Philosophy and Criminology from the
-            University of Toronto and graduted from General Assembly's Software
-            Engineering Immersive program in July 2020.
+            I am a full-stack developer based in Toronto. After graduating from
+            the University of Toronto with a BA in Philosophy and Criminology, I
+            revisited my interest in development and enrolled in General
+            Assembly's Software Engineering Immersive program. I possess a deep
+            interest for all aspects of development, from learning new languages
+            and frameworks to understanding how computers work. I learn a little
+            more everyday and have no intentions of stopping.
             <br />
-            <br />I strive to combine my love for design and creative visions
-            with my passion for logic and technology.
+            <br />
+            My love for good design influences my desire to write clean code and
+            create beautiful interfaces that provide seamless UX.
             <br />
             <br />
             When I am not behind my screen, I'm probably travelling, staying
-            active, or listening to good music and eating good food.
+            active, or listening to music, watching movies and feasting on some
+            bomb-ass food{" "}
+            <a href="http://instagram.com/weatingood" target="blank">
+              (food gram plug🍴)
+            </a>
+            .
           </p>
         </AboutElementsContainer>
         <SkillsElementsContainer
