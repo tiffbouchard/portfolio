@@ -5,6 +5,7 @@ import styled from "styled-components"
 import downloadFile from "../../static/documents/tiffanybouchardresume.pdf"
 
 const Nav = styled.nav`
+  max-width: 1250px;
   font-family: NeueMontreal;
   background-color: transparent;
   z-index: 1000;
