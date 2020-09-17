@@ -108,7 +108,7 @@ const ProjectContainerTwo = styled.div`
     img {
       max-width: 100%;
       height: auto;
-      margin-left: 0px;
+      margin-right: 0px;
     }
   }
 `
