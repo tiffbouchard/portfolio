@@ -8,7 +8,6 @@ import Github from "../icons/hollow-cut-github.svg"
 
 const MainProjectsContainer = styled.div`
   max-width: 1300px;
-  z-index: -1000;
   @media (max-width: 830px) {
     width: 100%;
     h1 {

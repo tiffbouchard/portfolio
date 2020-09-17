@@ -29,6 +29,7 @@ const customTwoStyles = {
 }
 
 const Nav = styled.nav`
+z-index: 500;
 background-color: transparent;
 list-style-type: none;
 display: flex;
