@@ -12,8 +12,6 @@
   </a>
 </p>
 
-<img src="./static/images/screenshot.png">
-
 ## Table of Contents
 - [About](#about)
 - [Learning Outcomes](#learning-outcomes)
