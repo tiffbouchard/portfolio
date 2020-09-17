@@ -77,7 +77,7 @@ button, a {
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 460px) {
    .heading {
     font-size: 30px;
     text-align: left;
