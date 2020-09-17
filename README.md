@@ -12,8 +12,6 @@
   </a>
 </p>
 
-<img src="./static/images/screenshot.png">
-
 ## Table of Contents
 - [About](#about)
 - [Learning Outcomes](#learning-outcomes)
@@ -35,7 +33,6 @@ My personal portfolio website built with Gatsby.js and styled-components to show
 - CSS/styled-components
 - AOS 
 - React Spring
-- Email.js
 
 ## Design Process
 - Designing and planning were done using Figma - view wireframes [here](https://www.figma.com/file/zsz5CQeViz63IhPaLdWt4l/portfolio?node-id=0%3A1)
