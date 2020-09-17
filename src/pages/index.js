@@ -12,7 +12,7 @@ import "../../src/global.css"
 const IndexPage = props => {
   return (
     <div id="top">
-      <SEO />
+      <SEO title="Tiffany Bouchard" />
       <Nav />
       {/* <About /> */}
       <Landing />

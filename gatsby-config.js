@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Tiffany Bouchard | Full-Stack Developer`,
+    title: `Full-Stack Developer`,
     description:
       "Full-stack developer from Toronto. Passionate about design, innovation and creativity.",
     author: `@tiffbouchard`,
