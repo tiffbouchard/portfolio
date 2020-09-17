@@ -76,6 +76,15 @@ button, a {
       display: flex;
     }
   }
+
+  @media (max-width: 400px) {
+   .heading {
+    font-size: 30px;
+    text-align: left;
+  }
+}
+  
+
   &:hover {
     background-color: #efeee9;
 }
