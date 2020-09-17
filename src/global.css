@@ -1,7 +1,3 @@
-* {
-  font-family: "NeueMontreal", sans-serif;
-}
-
 body {
   background-color: #efeee9;
 }
@@ -44,4 +40,13 @@ button:focus {
 @font-face {
   font-family: NMBold;
   src: url(../static/fonts/NeueMontreal-Bold.otf);
+}
+
+@font-face {
+  font-family: Migra;
+  src: url(../static/fonts/Migra-Extralight.otf);
+}
+@font-face {
+  font-family: MigraBold;
+  src: url(../static/fonts/Migra-Extrabold.otf);
 }

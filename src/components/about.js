@@ -1,11 +1,10 @@
 import React from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import styled, { isStyledComponent } from "styled-components"
-
-import Icon from "../icon/icon.svg"
+import styled from "styled-components"
 
 const AboutElementsContainer = styled.div`
+  font-family: NeueMontreal;
   max-width: 1300px;
   display: flex;
   padding: 40px;
@@ -20,6 +19,7 @@ const AboutElementsContainer = styled.div`
   }
 `
 const SkillsElementsContainer = styled.div`
+  font-family: NeueMontreal;
   padding: 40px;
   div {
     display: flex;
@@ -49,15 +49,13 @@ const AboutSection = props => {
           data-aos-duration="1000"
         >
           <p>
-            Adaptable full-stack developer passionate about actualizing
-            innovation & creativity. I am a full-stack developer based in
-            Toronto. After graduating from the University of Toronto with a BA
-            in Philosophy and Criminology, I revisited my interest in
-            development and enrolled in General Assembly's Software Engineering
-            Immersive program. I possess a deep interest for all aspects of
-            development, from learning new languages and frameworks to
-            understanding how computers work. I learn a little more everyday and
-            have no intentions of stopping.
+            I am a full-stack developer based in Toronto. After graduating from
+            the University of Toronto with a BA in Philosophy and Criminology, I
+            revisited my interest in development and enrolled in General
+            Assembly's Software Engineering Immersive program. I possess a deep
+            interest for all aspects of development, from learning new languages
+            and frameworks to understanding how computers work. I learn a little
+            more everyday and have no intentions of stopping.
             <br />
             <br />
             My love for good design influences my desire to write clean code and
@@ -67,8 +65,8 @@ const AboutSection = props => {
             When I am not behind my screen, I'm probably travelling, staying
             active, or listening to music, watching movies and feasting on some
             bomb-ass food{" "}
-            <a href="http://instagram.com/weatingood" target="blank">
-              (food gram plug🍴)
+            <a href="http://instagram.com/betterfull" target="blank">
+              (food blog plug🍴)
             </a>
             .
           </p>

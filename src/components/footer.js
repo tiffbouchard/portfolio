@@ -37,16 +37,16 @@ const Footer = () => {
       </div>
       <div>
         <a href="http://github.com/tiffbouchard" target="blank">
-          Github
+          Github ↗
         </a>
         <a href="http://linkedin.com/in/tiffanybouchard" target="blank">
-          LinkedIn
+          LinkedIn ↗
         </a>
         <a href="http://twitter.com/tiffbouchard" target="blank">
-          Twitter
+          Twitter ↗
         </a>
         <a href="http://instagram.com/tiffbouchard" target="blank">
-          Instagram
+          Instagram ↗
         </a>
       </div>
     </FooterContainer>

@@ -8,6 +8,7 @@ import Github from "../icons/hollow-cut-github.svg"
 
 const MainProjectsContainer = styled.div`
   max-width: 1300px;
+  z-index: -1000;
   @media (max-width: 830px) {
     width: 100%;
     h1 {
@@ -25,8 +26,8 @@ const ProjectContainerOne = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     h4 {
-      font-family: "NeueMontreal";
-      font-size: 20px;
+      font-family: NeueMontreal;
+      font-size: 25px;
       margin-bottom: 20px;
     }
     div {
@@ -35,8 +36,8 @@ const ProjectContainerOne = styled.div`
       flex-direction: row;
       justify-content: flex-start;
       span {
-        font-family: "NeueMontreal";
-        font-size: 11px;
+        font-family: NeueMontreal;
+        font-size: 12px;
         padding: 5px;
         margin-right: 5px;
         margin-bottom: 5px;
@@ -44,7 +45,7 @@ const ProjectContainerOne = styled.div`
       }
     }
     p {
-      font-family: "NeueMontreal";
+      font-family: NeueMontreal;
       text-align: justify;
     }
   }
@@ -74,8 +75,8 @@ const ProjectContainerTwo = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     h4 {
-      font-family: "NeueMontreal";
-      font-size: 20px;
+      font-family: NeueMontreal;
+      font-size: 25px;
       margin-bottom: 20px;
     }
     div {
@@ -114,6 +115,7 @@ const ProjectContainerTwo = styled.div`
 `
 
 const OtherProjectsBtn = styled.a`
+  font-family: "NeueMontreal";
   margin: 50px 0px;
   text-align: center;
   font-size: 12px;
