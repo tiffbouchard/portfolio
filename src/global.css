@@ -6,19 +6,9 @@ body {
   background-color: #efeee9;
 }
 
-.landing-section {
-  min-height: 100vh;
-  margin: 30px 150px 0 150px;
+section {
+  min-height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.sub-section {
-  min-height: 100vh;
-  display: flex;
-  margin-top: 100px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -26,9 +16,19 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
+
+a:active {
+  color: black;
+}
+
 a:hover {
   color: black;
+}
+
+button:focus {
+  outline: none;
 }
 
 @font-face {

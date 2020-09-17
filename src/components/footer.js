@@ -2,38 +2,53 @@ import React from "react"
 import styled from "styled-components"
 
 const FooterContainer = styled.footer`
-  width: 100%;
   list-style-type: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   position: fixed-bottom;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-top: 15px;
-  background-color: #efeee9;
+  margin: 40px;
     a {
       padding: 10px;
       font-family: NeueMontreal;
       background: none;
-      font-size: 12px;
+      font-size: 15px;
       border: none;
       color: black;
       transition: 0.5s;
       text-decoration: none;
       &:hover {
-        color: #3E3E3E;
+        text-decoration: line-through;
       }
     }
+  }
+  @media (max-width: 960px) {
+    align-items: center;
+    flex-direction: column;
   }
 `
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <div>🌱</div>
-      <a href="#about">Built & Designed by Tiffany Bouchard</a>
+      <div>
+        <a href="http://tiffbouchard.com">
+          Built & Designed by Tiffany Bouchard
+        </a>
+      </div>
+      <div>
+        <a href="http://github.com/tiffbouchard" target="blank">
+          Github
+        </a>
+        <a href="http://linkedin.com/in/tiffanybouchard" target="blank">
+          LinkedIn
+        </a>
+        <a href="http://twitter.com/tiffbouchard" target="blank">
+          Twitter
+        </a>
+        <a href="http://instagram.com/tiffbouchard" target="blank">
+          Instagram
+        </a>
+      </div>
     </FooterContainer>
   )
 }

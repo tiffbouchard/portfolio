@@ -8,16 +8,16 @@ const Nav = styled.nav`
   font-family: NeueMontreal;
   background-color: transparent;
   z-index: 1000;
-  max-width: 100%;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  margin: 40px;
-    button {
+  padding: 40px;
+  transition: background 0.5s;
+    button, a {
       padding: 10px;
       background: none;
       font-size: 25px;
@@ -27,10 +27,8 @@ const Nav = styled.nav`
       text-decoration: none;
       &:hover {
         cursor: pointer;
+        text-decoration: line-through;
       }
-      &:focus {
-      outline: none;
-    }
     a {
       color: black;
     }
@@ -38,6 +36,9 @@ const Nav = styled.nav`
       display: none;
     }
   }
+}
+&:hover {
+  background-color: #efeee9;
 }
 `
 
@@ -49,22 +50,18 @@ const NavBar = () => {
       config={{ delay: 300, duration: 1000 }}
     >
       {props => (
-        <Nav style={props} id="top">
+        <Nav style={props}>
           <div>
-            <button>Tiffany Bouchard</button>
+            <button onClick={() => scrollTo("#top")}>Tiffany Bouchard</button>
           </div>
-          <div>
+          <div id="nav-links">
             <button onClick={() => scrollTo("#projects")} href="#projects">
               Projects
             </button>
-            <button>
-              <a href="mailto:tiffnbouchard@gmail.com">Contact</a>
-            </button>
-            <button>
-              <a href={downloadFile} download>
-                Resume
-              </a>
-            </button>
+            <a href="mailto:tiffnbouchard@gmail.com">Contact</a>
+            <a href={downloadFile} download>
+              Resume
+            </a>
           </div>
         </Nav>
       )}

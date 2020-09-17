@@ -1,16 +1,15 @@
 import React from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
-import styled from "styled-components"
+import styled, { isStyledComponent } from "styled-components"
+
+import Icon from "../icon/icon.svg"
 
 const AboutElementsContainer = styled.div`
-  max-width: 900px;
-  h1 {
-    margin: 0px 30px 50px 30px;
-    font-size: 30px;
-  }
+  max-width: 1300px;
+  display: flex;
+  padding: 40px;
   p {
-    margin: 0px 30px 50px 30px;
     text-align: justify;
     a {
       color: black;
@@ -21,10 +20,7 @@ const AboutElementsContainer = styled.div`
   }
 `
 const SkillsElementsContainer = styled.div`
-  margin: 0px 30px 50px 30px;
-  h1 {
-    font-size: 30px;
-  }
+  padding: 40px;
   div {
     display: flex;
     justify-content: space-between;
@@ -45,7 +41,7 @@ const AboutSection = props => {
   })
 
   return (
-    <section className="sub-section">
+    <section>
       <div>
         <AboutElementsContainer
           data-aos="fade-up"
@@ -53,13 +49,15 @@ const AboutSection = props => {
           data-aos-duration="1000"
         >
           <p>
-            I am a full-stack developer based in Toronto. After graduating from
-            the University of Toronto with a BA in Philosophy and Criminology, I
-            revisited my interest in development and enrolled in General
-            Assembly's Software Engineering Immersive program. I possess a deep
-            interest for all aspects of development, from learning new languages
-            and frameworks to understanding how computers work. I learn a little
-            more everyday and have no intentions of stopping.
+            Adaptable full-stack developer passionate about actualizing
+            innovation & creativity. I am a full-stack developer based in
+            Toronto. After graduating from the University of Toronto with a BA
+            in Philosophy and Criminology, I revisited my interest in
+            development and enrolled in General Assembly's Software Engineering
+            Immersive program. I possess a deep interest for all aspects of
+            development, from learning new languages and frameworks to
+            understanding how computers work. I learn a little more everyday and
+            have no intentions of stopping.
             <br />
             <br />
             My love for good design influences my desire to write clean code and
