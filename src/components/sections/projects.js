@@ -17,9 +17,8 @@ const MainProjectsContainer = styled.div`
 `
 
 const ProjectContainerOne = styled.div`
-  max-width: 1300px;
   display: flex;
-  padding: 40px;
+  margin: 40px;
   div {
     display: flex;
     flex-direction: column;
@@ -50,13 +49,12 @@ const ProjectContainerOne = styled.div`
     }
   }
   img {
-    height: 500px;
+    height: 400px;
     margin-left: 30px;
   }
   @media (max-width: 1000px) {
     display: block;
     flex-wrap: wrap;
-    padding: 40px;
     img {
       max-width: 100%;
       height: auto;
@@ -69,8 +67,7 @@ const ProjectContainerTwo = styled.div`
   display: flex;
   flex-direction: row-reverse;
   text-align: right;
-  margin: 60px 0px;
-  padding: 40px;
+  margin: 60px 40px;
   div {
     display: flex;
     flex-direction: column;
@@ -108,7 +105,6 @@ const ProjectContainerTwo = styled.div`
   @media (max-width: 1000px) {
     display: block;
     flex-wrap: wrap;
-    padding: 40px;
     img {
       max-width: 100%;
       height: auto;
@@ -146,10 +142,14 @@ const ProjectsSection = props => {
             <h4>Ojos</h4>
             <div>
               <span>
-                <a href="">Code ↗</a>
+                <a href="http://github.com/tiffbouchard/ojos" target="blank">
+                  Code ↗
+                </a>
               </span>
               <span>
-                <a href="">Live ↗</a>
+                <a href="http://ojos.vercel.app" target="blank">
+                  Live ↗
+                </a>
               </span>
             </div>
             <p>
@@ -172,7 +172,7 @@ const ProjectsSection = props => {
             </div>
           </div>
           <div>
-            <img src={OJOS} />
+            <img src="https://i.imgur.com/U9i2m2e.png" />
           </div>
         </ProjectContainerOne>
         <ProjectContainerTwo
@@ -184,11 +184,13 @@ const ProjectsSection = props => {
             <h4>Iome</h4>
             <div>
               <span>
-                <a href="">Code</a>
+                <a href="http://github.com/tiffbouchard/iome" target="blank">
+                  Code ↗
+                </a>
               </span>
-              <span>
+              {/* <span>
                 <a href="">Live</a>
-              </span>
+              </span> */}
             </div>
             <p>
               A task management app geared towards creatives to help boost their
@@ -210,7 +212,7 @@ const ProjectsSection = props => {
             </div>
           </div>
           <div>
-            <img src="https://i.imgur.com/d3YRIPg.png" />
+            <img src="https://i.imgur.com/Y5YFvGU.png" />
           </div>
         </ProjectContainerTwo>
         <ProjectContainerOne
@@ -222,11 +224,16 @@ const ProjectsSection = props => {
             <h4>Chef</h4>
             <div>
               <span>
-                <a href="">Code</a>
+                <a
+                  href="http://github.com/tiffbouchard/chef.dev"
+                  target="blank"
+                >
+                  Code ↗
+                </a>
               </span>
-              <span>
+              {/* <span>
                 <a href="">Live</a>
-              </span>
+              </span> */}
             </div>
             <p>
               A blog geared towards tech tutorials. Blog posts are enabled with
@@ -243,7 +250,7 @@ const ProjectsSection = props => {
             </div>
           </div>
           <div>
-            <img src="https://i.imgur.com/NsFZSp0.png" />
+            <img src="https://i.imgur.com/amGK4Xd.png" />
           </div>
         </ProjectContainerOne>
       </MainProjectsContainer>

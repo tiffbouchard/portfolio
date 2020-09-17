@@ -3,7 +3,7 @@ import SEO from "../components/seo"
 
 import Nav from "../components/nav.js"
 import Footer from "../components/footer"
-import About from "../components/sections/about.js"
+// import About from "../components/sections/about.js"
 import Projects from "../components/sections/projects.js"
 import Landing from "../components/sections/landing"
 

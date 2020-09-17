@@ -4,8 +4,7 @@ import "aos/dist/aos.css"
 import styled from "styled-components"
 
 const AboutElementsContainer = styled.div`
-  max-width: 1300px;
-  display: flex;
+  max-width: 1250px;
   margin: 40px;
   p {
     font-size: 40px;
@@ -26,8 +25,8 @@ const LandingSection = props => {
           data-aos-duration="1000"
         >
           <p>
-            Adaptable full-stack developer passionate about actualizing
-            innovation, creativity & design, with a mission to build things with
+            Full-stack developer passionate about actualizing innovation,
+            creativity & quality design, with a mission to build things with
             purpose that enrich lives.
           </p>
         </AboutElementsContainer>

@@ -15,7 +15,9 @@ const Nav = styled.nav`
   top: 0;
   left: 0;
   right: 0;
-  padding: 40px;
+  margin: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   transition: background 0.5s;
     button, a {
       padding: 10px;
@@ -32,13 +34,21 @@ const Nav = styled.nav`
     a {
       color: black;
     }
-      @media (max-width: 960px) {
-      display: none;
-    }
+  }
+  .mobile-menu {
+    display: none;
   }
 }
-&:hover {
-  background-color: #efeee9;
+  @media (max-width: 960px) {
+    .nav-link {
+      display: none;
+    }
+    .mobile-menu {
+      display: flex;
+    }
+  }
+  &:hover {
+    background-color: #efeee9;
 }
 `
 
@@ -54,14 +64,19 @@ const NavBar = () => {
           <div>
             <button onClick={() => scrollTo("#top")}>Tiffany Bouchard</button>
           </div>
-          <div id="nav-links">
-            <button onClick={() => scrollTo("#projects")} href="#projects">
-              Projects
+          <div>
+            <button className="nav-link" onClick={() => scrollTo("#projects")}>
+              About
             </button>
-            <a href="mailto:tiffnbouchard@gmail.com">Contact</a>
-            <a href={downloadFile} download>
+            <a className="nav-link" href="mailto:tiffnbouchard@gmail.com">
+              Contact
+            </a>
+            <a className="nav-link" href={downloadFile} download>
               Resume
             </a>
+            <button className="mobile-menu" onClick={() => scrollTo("#menu")}>
+              Menu
+            </button>
           </div>
         </Nav>
       )}
