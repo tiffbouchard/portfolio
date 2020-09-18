@@ -49,23 +49,29 @@ const AboutSection = props => {
             revisited my interest in development and enrolled in General
             Assembly's Software Engineering Immersive program. I possess a deep
             interest for all aspects of development, from learning new languages
-            and frameworks to understanding how computers work. I learn a little
-            more everyday and have no intentions of stopping.
+            and frameworks to understanding how computers work.
             <br />
             <br />
             My love for good design influences my desire to write clean code and
             create beautiful interfaces that provide seamless UX. I have a
             passion for minimalism and I believe that less is truly more not
-            only in design but all aspects of life.
+            only in design but all aspects of life. I am a very well-rounded
+            individual with experiences in different fields and many different
+            interests. My knowledge and multidisciplinary approach allows me to
+            bring something different to the roles I work in and enables me to
+            see the big picture and understand how visions and ideas can come to
+            fruition.
             <br />
             <br />
             When I am not behind my screen, I'm probably travelling, staying
-            active, or listening to music, watching movies and feasting on some
-            bomb-ass food{" "}
+            active, or listening to music, watching movies and feasting on good
+            food
             <a href="http://instagram.com/betterfull" target="blank">
-              (food blog plug🍴)
+              (food blog plug🍴).
             </a>
-            .
+            <br />
+            <br />I would love to chat, so feel free to hit me up! You can reach
+            me at tiffnbouchard@gmail.com!
           </p>
         </AboutElementsContainer>
         <SkillsElementsContainer>
