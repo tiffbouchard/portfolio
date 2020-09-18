@@ -4,6 +4,9 @@ import { Spring } from "react-spring/renderprops"
 import styled from "styled-components"
 import downloadFile from "../../static/documents/tiffanybouchardresume.pdf"
 
+import AOS from "aos"
+import "aos/dist/aos.css"
+
 import About from "../components/about"
 
 import Modal from "react-modal"
@@ -115,6 +118,10 @@ button, a {
 `
 
 const NavBar = () => {
+  React.useEffect(() => {
+    AOS.init()
+  })
+
   const [modalIsOpen, setIsOpen] = React.useState(false)
 
   function openModal() {
@@ -161,6 +168,7 @@ const NavBar = () => {
                 backgroundColor: "transparent",
               }}
               onClick={closeModal}
+              className="modal-button"
             >
               X
             </button>
@@ -180,6 +188,7 @@ const NavBar = () => {
                 backgroundColor: "transparent",
               }}
               onClick={closeTwoModal}
+              className="modal-button"
             >
               X
             </button>
@@ -191,6 +200,9 @@ const NavBar = () => {
                 alignItems: "center",
                 height: "60vh",
               }}
+              data-aos="fade-in"
+              data-aos-duration="1000"
+              data-aos-delay="100"
             >
               <button
                 style={{
@@ -198,7 +210,7 @@ const NavBar = () => {
                   fontSize: "50px",
                   fontFamily: "NeueMontrealLight",
                 }}
-                className="nav-link"
+                className="modal-button"
                 onClick={openModalAndClose}
               >
                 About

@@ -1,4 +1,6 @@
 import React from "react"
+import AOS from "aos"
+import "aos/dist/aos.css"
 import styled from "styled-components"
 
 const AboutElementsContainer = styled.div`
@@ -34,9 +36,12 @@ const SkillsElementsContainer = styled.div`
 `
 
 const AboutSection = props => {
+  React.useEffect(() => {
+    AOS.init()
+  })
   return (
     <section>
-      <div>
+      <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
         <AboutElementsContainer>
           <p>
             I am a full-stack developer based in Toronto. After graduating from
