@@ -20,7 +20,7 @@ const AboutElementsContainer = styled.div`
 `
 const SkillsElementsContainer = styled.div`
   font-family: NeueMontreal;
-  padding: 40px;
+  padding: 0 40px 40px 40px;
   div {
     display: flex;
     justify-content: space-between;
@@ -70,11 +70,14 @@ const AboutSection = props => {
               (food blog plug🍴).
             </a>
             <br />
-            <br />I would love to chat, so feel free to hit me up! You can reach
-            me at tiffnbouchard@gmail.com!
+            <br />I would love to chat, so feel free to hit me up. You can reach
+            me at tiffnbouchard@gmail.com.
           </p>
         </AboutElementsContainer>
         <SkillsElementsContainer>
+          My go-to tech stack is MERN (MongoDB, Express, React + Node), however
+          I am always interested in learning new technologies. Overall, I have
+          experience with the following...
           <div>
             <ul>
               <li className="header">Languages</li>
