@@ -2,7 +2,6 @@ import React from "react"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import styled from "styled-components"
-import OJOS from "../../../static/images/ojos.png"
 import ExternalLinkIcon from "../icons/external.svg"
 import Github from "../icons/hollow-cut-github.svg"
 
