@@ -24,6 +24,9 @@ const FooterContainer = styled.footer`
   @media (max-width: 960px) {
     align-items: center;
     flex-direction: column;
+    .socials {
+      margin-top: 5px;
+    }
   }
 `
 
@@ -32,21 +35,21 @@ const Footer = () => {
     <FooterContainer>
       <div>
         <a href="http://tiffbouchard.com">
-          Built & Designed by Tiffany Bouchard
+          Built & Designed by Tiffany Bouchard 🌱
         </a>
       </div>
-      <div>
+      <div className="socials">
         <a href="http://github.com/tiffbouchard" target="blank">
-          Github ↗
+          Github
         </a>
         <a href="http://linkedin.com/in/tiffanybouchard" target="blank">
-          LinkedIn ↗
+          LinkedIn
         </a>
         <a href="http://twitter.com/tiffbouchard" target="blank">
-          Twitter ↗
+          Twitter
         </a>
         <a href="http://instagram.com/tiffbouchard" target="blank">
-          Instagram ↗
+          Instagram
         </a>
       </div>
     </FooterContainer>

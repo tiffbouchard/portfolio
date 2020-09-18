@@ -1,6 +1,4 @@
 import React from "react"
-import AOS from "aos"
-import "aos/dist/aos.css"
 import styled from "styled-components"
 
 const AboutElementsContainer = styled.div`
@@ -36,18 +34,10 @@ const SkillsElementsContainer = styled.div`
 `
 
 const AboutSection = props => {
-  React.useEffect(() => {
-    AOS.init()
-  })
-
   return (
     <section>
       <div>
-        <AboutElementsContainer
-          data-aos="fade-up"
-          data-aos-delay="250"
-          data-aos-duration="1000"
-        >
+        <AboutElementsContainer>
           <p>
             I am a full-stack developer based in Toronto. After graduating from
             the University of Toronto with a BA in Philosophy and Criminology, I
@@ -59,7 +49,9 @@ const AboutSection = props => {
             <br />
             <br />
             My love for good design influences my desire to write clean code and
-            create beautiful interfaces that provide seamless UX.
+            create beautiful interfaces that provide seamless UX. I have a
+            passion for minimalism and I believe that less is truly more not
+            only in design but all aspects of life.
             <br />
             <br />
             When I am not behind my screen, I'm probably travelling, staying
@@ -71,11 +63,7 @@ const AboutSection = props => {
             .
           </p>
         </AboutElementsContainer>
-        <SkillsElementsContainer
-          data-aos="fade-up"
-          data-aos-delay="350"
-          data-aos-duration="1000"
-        >
+        <SkillsElementsContainer>
           <div>
             <ul>
               <li className="header">Languages</li>

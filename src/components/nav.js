@@ -9,34 +9,57 @@ import About from "../components/about"
 import Modal from "react-modal"
 
 const customStyles = {
+  overlay: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+  },
   content: {
+    position: "absolute",
     top: "0",
     left: "0",
     right: "0",
     bottom: "0",
-    backgroundColor: "#efeee9",
+    background: "rgb(239,238,233, 0.9)",
+    overflow: "auto",
+    WebkitOverflowScrolling: "touch",
+    borderRadius: "4px",
+    outline: "none",
+    padding: "20px",
   },
 }
 
 const customTwoStyles = {
+  overlay: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+  },
   content: {
+    position: "absolute",
     top: "0",
     left: "0",
     right: "0",
     bottom: "0",
-    backgroundColor: "#efeee9",
+    background: "rgb(239,238,233, 0.9)",
+    overflow: "auto",
+    WebkitOverflowScrolling: "touch",
+    borderRadius: "4px",
+    outline: "none",
+    padding: "20px",
   },
 }
 
 const Nav = styled.nav`
-z-index: 500;
 background-color: transparent;
 list-style-type: none;
 display: flex;
 justify-content: space-between;
 align-items: center;
-position: sticky;
-top: 0;
 margin: 30px;
 padding-top: 10px;
 padding-bottom: 10px;
@@ -125,6 +148,97 @@ const NavBar = () => {
     >
       {props => (
         <Nav style={props}>
+          <Modal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            style={customStyles}
+          >
+            <button
+              style={{
+                border: "none",
+                fontSize: "50px",
+                fontFamily: "NeueMontrealLight",
+                backgroundColor: "transparent",
+              }}
+              onClick={closeModal}
+            >
+              X
+            </button>
+            <About />
+          </Modal>
+
+          <Modal
+            isOpen={modalTwoIsOpen}
+            onRequestClose={closeTwoModal}
+            style={customTwoStyles}
+          >
+            <button
+              style={{
+                border: "none",
+                fontSize: "50px",
+                fontFamily: "NeueMontrealLight",
+                backgroundColor: "transparent",
+              }}
+              onClick={closeTwoModal}
+            >
+              X
+            </button>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "60vh",
+              }}
+            >
+              <button
+                style={{
+                  border: "none",
+                  fontSize: "50px",
+                  fontFamily: "NeueMontrealLight",
+                }}
+                className="nav-link"
+                onClick={openModalAndClose}
+              >
+                About
+              </button>
+              <a
+                style={{
+                  border: "none",
+                  fontSize: "50px",
+                  fontFamily: "NeueMontrealLight",
+                }}
+                className="nav-link"
+                href="http://tiffbouchard.com/#projects"
+              >
+                Projects
+              </a>
+              <a
+                style={{
+                  border: "none",
+                  fontSize: "50px",
+                  fontFamily: "NeueMontrealLight",
+                }}
+                className="nav-link"
+                href="mailto:tiffnbouchard@gmail.com"
+              >
+                Contact
+              </a>
+              <a
+                style={{
+                  border: "none",
+                  fontSize: "50px",
+                  fontFamily: "NeueMontrealLight",
+                }}
+                className="nav-link"
+                href={downloadFile}
+                download
+              >
+                Resume
+              </a>
+            </div>
+          </Modal>
           <div>
             <button className="heading" onClick={() => scrollTo("#top")}>
               Tiffany Bouchard
@@ -151,95 +265,6 @@ const NavBar = () => {
               Menu
             </button>
           </div>
-          <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            style={customStyles}
-          >
-            <button
-              style={{
-                border: "none",
-                fontSize: "25px",
-                fontFamily: "NeueMontrealLight",
-              }}
-              onClick={closeModal}
-            >
-              X
-            </button>
-            <About />
-          </Modal>
-
-          <Modal
-            isOpen={modalTwoIsOpen}
-            onRequestClose={closeTwoModal}
-            style={customTwoStyles}
-          >
-            <button
-              style={{
-                border: "none",
-                fontSize: "25px",
-                fontFamily: "NeueMontrealLight",
-              }}
-              onClick={closeTwoModal}
-            >
-              X
-            </button>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                height: "60vh",
-              }}
-            >
-              <button
-                style={{
-                  border: "none",
-                  fontSize: "25px",
-                  fontFamily: "NeueMontrealLight",
-                }}
-                className="nav-link"
-                onClick={openModalAndClose}
-              >
-                About
-              </button>
-              <a
-                style={{
-                  border: "none",
-                  fontSize: "25px",
-                  fontFamily: "NeueMontrealLight",
-                }}
-                className="nav-link"
-                href="http://tiffbouchard.com/#projects"
-              >
-                Projects
-              </a>
-              <a
-                style={{
-                  border: "none",
-                  fontSize: "25px",
-                  fontFamily: "NeueMontrealLight",
-                }}
-                className="nav-link"
-                href="mailto:tiffnbouchard@gmail.com"
-              >
-                Contact
-              </a>
-              <a
-                style={{
-                  border: "none",
-                  fontSize: "25px",
-                  fontFamily: "NeueMontrealLight",
-                }}
-                className="nav-link"
-                href={downloadFile}
-                download
-              >
-                Resume
-              </a>
-            </div>
-          </Modal>
         </Nav>
       )}
     </Spring>

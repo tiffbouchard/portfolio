@@ -113,17 +113,19 @@ const ProjectContainerTwo = styled.div`
   }
 `
 
-const OtherProjectsBtn = styled.a`
-  font-family: "NeueMontreal";
-  margin: 50px 0px;
-  text-align: center;
-  font-size: 12px;
-  padding: 5px;
-  border: solid 1px;
-  width: 150px;
-  background-color: transparent;
-  &:hover {
-    cursor: pointer;
+const OtherProjectsBtn = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    font-family: "NeueMontreal";
+    margin: 40px 0px;
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    border: solid 1px;
+    width: 150px;
+    background-color: transparent;
   }
 `
 
@@ -255,11 +257,10 @@ const ProjectsSection = props => {
           </div>
         </ProjectContainerOne>
       </MainProjectsContainer>
-      <OtherProjectsBtn
-        href="http://github.com/tiffbouchard/repositories"
-        target="blank"
-      >
-        Other Projects
+      <OtherProjectsBtn>
+        <a href="http://github.com/tiffbouchard/repositories" target="blank">
+          Other Projects
+        </a>
       </OtherProjectsBtn>
     </section>
   )

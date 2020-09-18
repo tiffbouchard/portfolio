@@ -14,7 +14,6 @@ const IndexPage = props => {
     <div id="top">
       <SEO title="Tiffany Bouchard" />
       <Nav />
-      {/* <About /> */}
       <Landing />
       <Projects />
       <Footer />
