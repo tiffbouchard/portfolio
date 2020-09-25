@@ -155,7 +155,7 @@ const ProjectsSection = props => {
               </span>
             </div>
             <p>
-              OJOS is an eCommerce site created for a boutique specializing in
+              OJOS is an eCommerce site created for a friends boutique specializing in
               deadstock fabrics, one-of-one and custom pieces. It is made with
               Next.js framework for React. It uses Sanity.io headless CMS for
               seamless user interaction so that admin can add, delete and update
