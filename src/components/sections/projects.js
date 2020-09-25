@@ -183,38 +183,42 @@ const ProjectsSection = props => {
           data-aos-delay="250"
         >
           <div>
-            <h4>Iome</h4>
+            <h4>Forkpitch</h4>
             <div>
               <span>
-                <a href="http://github.com/tiffbouchard/iome" target="blank">
+                <a
+                  href="http://github.com/tiffbouchard/forkpitch"
+                  target="blank"
+                >
                   Code ↗
                 </a>
               </span>
-              {/* <span>
-                <a href="">Live</a>
-              </span> */}
+              <span>
+                <a href="http://forkpitch.herokuapp.com" target="blank">
+                  Live ↗
+                </a>
+              </span>
             </div>
             <p>
-              A task management app geared towards creatives to help boost their
-              confidence in creating their portfolio as well as provide
-              motivation and helpful resources. Users are able to walk through
-              modules, take notes and track their progress. Future features
-              include an explore page similar to Dribbble where final portfolios
-              can be shared and feedback can be circulated. Collaborated with
-              one developer and three UX designers.
+              Forkpitch is a music review search engine application that uses an
+              unofficial Pitchfork API to scrape album review data. Users are
+              able to log in with Google OAuth, leave reviews on albums, access
+              their reviews, delete reviews and search Pitchfork album reviews.
+              The design is heavily inspired by the original Pitchfork website.
+              I have recently began improving it so there is still a lot of work
+              that needs to be done, such as protecting routes, adding ability
+              to save albums and edit reviews.
             </p>
             <div>
-              <span>React</span>
-              <span>Express</span>
-              <span>Node.js</span>
-              <span>MongoDB</span>
-              <span>RSuite</span>
               <span>HTML</span>
               <span>CSS</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
             </div>
           </div>
           <div>
-            <img src="https://i.imgur.com/Y5YFvGU.png" />
+            <img src="https://i.imgur.com/Kiht1Ux.png" />
           </div>
         </ProjectContainerTwo>
         <ProjectContainerOne
@@ -241,7 +245,8 @@ const ProjectsSection = props => {
               A blog geared towards tech tutorials. Blog posts are enabled with
               a fully functional RTE. User's can post blog posts, view other
               users blog posts as well as other users public profiles.
-              Collaborated with a team of two other developers.
+              Collaborated with a team of two other developers. (Currently
+              fixing bugs)
             </p>
             <div>
               <span>React</span>
