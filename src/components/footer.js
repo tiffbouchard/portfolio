@@ -48,6 +48,9 @@ const Footer = () => {
         <a href="http://twitter.com/tiffbouchard" target="blank">
           Twitter
         </a>
+        <a href="https://medium.com/@tiffbouchard" target="blank">
+          Medium
+        </a>
         <a href="http://instagram.com/tiffbouchard" target="blank">
           Instagram
         </a>
