@@ -84,14 +84,14 @@ const AboutSection = props => {
               <li>Chrome DevTools</li>
               <li>Postman</li>
               <li>MongoDB</li>
+              <li>PostgreSQL</li>
             </ul>
             <ul>
               <li className="header">Design</li>
               <li>Figma</li>
-              <li>Photoshop</li>
-              <li>Prototyping</li>
-              <li>Wireframing</li>
-              <li>ERD</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe XD</li>
             </ul>
           </div>
         </SkillsElementsContainer>
