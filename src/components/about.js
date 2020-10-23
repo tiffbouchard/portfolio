@@ -5,7 +5,7 @@ import styled from "styled-components"
 
 const AboutElementsContainer = styled.div`
   font-family: NeueMontreal;
-  max-width: 1300px;
+  max-width: 1000px;
   display: flex;
   padding: 40px;
   margin-top: 30px;
@@ -36,19 +36,13 @@ const SkillsElementsContainer = styled.div`
   }
 `
 
-const AboutPageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-
 const AboutSection = props => {
   React.useEffect(() => {
     AOS.init()
   })
   return (
     <section>
-      <AboutPageContainer data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+      <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
         <AboutElementsContainer>
           <p>
             I am a developer & designer based in Toronto.  
@@ -101,7 +95,7 @@ const AboutSection = props => {
             </ul>
           </div>
         </SkillsElementsContainer>
-      </AboutPageContainer>
+      </div>
     </section>
   )
 }
