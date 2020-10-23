@@ -38,9 +38,9 @@ const SkillsElementsContainer = styled.div`
 const AboutPageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  justify-content: center;
+  height: 100%;
   align-items: center;
+  text-align: center;
 `
 
 const AboutSection = props => {
