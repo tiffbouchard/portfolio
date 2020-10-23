@@ -49,7 +49,7 @@ const AboutSection = props => {
   })
   return (
     <section>
-      <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
+      <AboutPageContainer data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
         <AboutElementsContainer>
           <p>
             I am a developer & designer based in Toronto.  
@@ -103,7 +103,7 @@ const AboutSection = props => {
             </ul>
           </div>
         </SkillsElementsContainer>
-      </div>
+      </AboutPageContainer>
     </section>
   )
 }
