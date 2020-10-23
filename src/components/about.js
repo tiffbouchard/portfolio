@@ -8,8 +8,9 @@ const AboutElementsContainer = styled.div`
   max-width: 1300px;
   display: flex;
   padding: 40px;
+  margin-top: 30px;
   p {
-    text-align: justify;
+    text-align: center;
     a {
       color: black;
       &:hover {
@@ -38,9 +39,7 @@ const SkillsElementsContainer = styled.div`
 const AboutPageContainer = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100%;
   align-items: center;
-  text-align: center;
 `
 
 const AboutSection = props => {
@@ -68,7 +67,6 @@ const AboutSection = props => {
           </p>
         </AboutElementsContainer>
         <SkillsElementsContainer>
-          I have experience with the following...
           <div>
             <ul>
               <li className="header">Languages</li>
