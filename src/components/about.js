@@ -35,6 +35,14 @@ const SkillsElementsContainer = styled.div`
   }
 `
 
+const AboutPageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+`
+
 const AboutSection = props => {
   React.useEffect(() => {
     AOS.init()
@@ -44,40 +52,23 @@ const AboutSection = props => {
       <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="100">
         <AboutElementsContainer>
           <p>
-            I am a full-stack developer based in Toronto. After graduating from
-            the University of Toronto with a BA in Philosophy and Criminology, I
-            revisited my interest in development and enrolled in General
-            Assembly's Software Engineering Immersive program. I possess a deep
-            interest for all aspects of development, from learning new languages
-            and frameworks to understanding how computers work.
+            I am a developer & designer based in Toronto.  
             <br />
             <br />
-            My love for good design influences my desire to write clean code and
-            create beautiful interfaces that provide seamless UX. I have a
-            passion for minimalism and I believe that less is truly more not
-            only in design but all aspects of life. I am a very well-rounded
-            individual with experiences in different fields and many different
-            interests. My knowledge and multidisciplinary approach allows me to
-            bring something different to the roles I work in and enables me to
-            see the big picture and understand how visions and ideas can come to
-            fruition.
+            My love for design influences my desire to write clean code and
+            create beautiful interfaces that provide seamless user experience. I am inspired by minimalism and I believe that less is truly more not
+            only in design but life. I utilize a multidisciplinary approach to development and design which allows me to
+            see the bigger picture and create a shared vision.
             <br />
             <br />
-            When I am not behind my screen, I'm probably travelling, staying
-            active, or listening to music, watching movies and feasting on good
-            food
-            <a href="http://instagram.com/betterfull" target="blank">
-              (food blog plug🍴).
-            </a>
+            I enjoy to travelling, moving my body, listening to music, watching movies and eating a lot.
             <br />
-            <br />I would love to chat, so feel free to hit me up. You can reach
+            <br />Feel free to hit me up. You can reach
             me at tiffnbouchard@gmail.com.
           </p>
         </AboutElementsContainer>
         <SkillsElementsContainer>
-          My go-to tech stack is MERN (MongoDB, Express, React + Node), however
-          I am always interested in learning new technologies. Overall, I have
-          experience with the following...
+          I have experience with the following...
           <div>
             <ul>
               <li className="header">Languages</li>
